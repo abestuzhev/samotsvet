@@ -333,12 +333,7 @@ a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-p
       .header-nav_item a:hover::after {
         opacity: 1; }
 
-.active a {
-  color: #fff; }
-  .active a:hover {
-    color: #fff; }
-
-a.menu-link {
+.menu-link {
   color: #000;
   display: block;
   text-decoration: none; }

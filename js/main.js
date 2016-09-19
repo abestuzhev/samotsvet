@@ -79,7 +79,8 @@ $(document).ready(function(){
 
  });
 });
-
+//
+//
 $(function() {
 	$('body').addClass('js');
 		var	$menu = $('#menu'),
@@ -107,7 +108,8 @@ $(window).resize(function() {
 			$("#menu").removeClass("active");
 		}
 });
-
+//
+//
 
 
 $(document).ready(function(){
