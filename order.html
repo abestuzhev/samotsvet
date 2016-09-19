@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Оформление заказа</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.png">
+  <!--[if lt IE 10]><script src="js/IE9.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+
+</head>
+<body>
+
+<!-- START header -->
+<div class="header">
+  <div class="header-top">
+    <div class="l-layout">
+      <div class="l-header">
+        <div class="header-top_logo"><img src="img/logo.png" alt=""></div>
+        <div class="header-top_phoneNumber">+7 (495) 723-33-63</div>
+        <a href="" class="header-top_userAccount"></a>
+        <div class="header-top_search">
+          <form action="">
+            <input type="search">
+            <button type="button" name="button"></button>
+          </form>
+        </div>
+        <div class="header-top_basket">
+          <a href="#">
+            <span class="header-top_basket-quantity">3</span>
+            <span class="header-top_basket-sum">20076<span>руб.</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <div class="l-layout">
+      <!-- <ul class="header-nav-list">
+        <li class="header-nav_item active"><a href="#">Каталог</a></li>
+        <li class="header-nav_item"><a href="#">Подбор по зодиаку</a></li>
+        <li class="point"><span></span></li>
+        <li class="header-nav_item"><a href="#">Доставка</a></li>
+        <li class="point"><span></span></li>
+        <li class="header-nav_item"><a href="#">Оплата</a></li>
+        <li class="point"><span></span></li>
+        <li class="header-nav_item"><a href="#">Новинки</a></li>
+        <li class="point"><span></span></li>
+        <li class="header-nav_item"><a href="#">Акции</a></li>
+        <li class="point"><span></span></li>
+        <li class="header-nav_item"><a href="#">Распродажа</a></li>
+        <li class="point"><span></span></li>
+        <li class="header-nav_item"><a href="#">Оптовикам</a></li>
+      </ul> -->
+        <a href="#menu" class="menu-link active">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      	<div id="menu" class="menu">
+      		<ul class=" level-1">
+      			<li class="header-nav_item"><a class="has-subnav" href="">Каталог</a>
+              <ul class="wide level-2">
+                <!-- <li class="wide-wrap"></li> -->
+
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Браслеты</div>
+                  <!-- <div class="wide-item_"></div> -->
+                  <a class="" href="#">Камень</a>
+                  <a class="" href="#">Шамбала</a>
+                  <a class="" href="#">Майорка</a>
+                </div>
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Броши</div>
+                  <!-- <div class="wide-item_"></div> -->
+                  <a class="" href="#">Бижутерия</a>
+                  <a class="" href="#">Камни</a>
+                </div>
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Бусы</div>
+                  <!-- <div class="wide-item_"></div> -->
+                  <a class="" href="#">Цирконы</a>
+                  <a class="" href="#">Камень</a>
+                  <a class="" href="#">Майорка</a>
+                </div>
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Жемчуг</div>
+                  <!-- <div class="wide-item_"></div> -->
+                  <a class="" href="#">Браслеты</a>
+                  <a class="" href="#">Бусы</a>
+                  <a class="" href="#">Броши</a>
+                  <a class="" href="#">Серьги</a>
+                </div>
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Кольца</div>
+                  <!-- <div class="wide-item_"></div> -->
+                  <a class="" href="#">Камни</a>
+                  <a class="" href="#">Родий</a>
+                </div>
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Бижутерия</div>
+                  <!-- <div class="wide-item_"></div> -->
+                  <a class="" href="#">Браслеты</a>
+                  <a class="" href="#">Колье</a>
+                  <a class="" href="#">Кольца</a>
+                  <a class="" href="#">Посеребрение</a>
+                  <a class="" href="#">Кулоны</a>
+                  <a class="" href="#">Серьги</a>
+                </div>
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Кулоны</div>
+                  <!-- <div class="wide-item_"></div> -->
+                  <a class="" href="#">Камень</a>
+                  <a class="" href="#">Муранское стекло</a>
+                </div>
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Серьги</div>
+                  <!-- <div class="wide-item_"></div> -->
+                  <a class="" href="#">Камни</a>
+                  <a class="" href="#">Родий</a>
+                  <a class="" href="#">Пуссеты</a>
+                </div>
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Сувениры</div>
+                  <!-- <div class="wide-item_"></div> -->
+                  <a class="" href="#">Камни</a>
+                  <a class="" href="#">Фигурки</a>
+                </div>
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Авторские</div>
+                  <!-- <div class="wide-item_"></div> -->
+                  <a class="" href="#">Браслеты</a>
+                  <a class="" href="#">Бусы</a>
+                  <a class="" href="#">Колье</a>
+                  <a class="" href="#">Кольца</a>
+                  <a class="" href="#">Серьги</a>
+                </div>
+                <!-- <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Элит</div>
+                  <a class="" href="#">Браслеты</a>
+                  <a class="" href="#">Колье</a>
+                  <a class="" href="#">Золото</a>
+                  <a class="" href="#">Комплекты</a>
+                  <a class="" href="#">Родий</a>
+                  <a class="" href="#">Кулоны</a>
+                </div> -->
+                <!-- <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_title">Фурнитура</div>
+                  <a class="" href="#">Бусины</a>
+                  <a class="" href="#">Упаковка</a>
+                  <a class="" href="#">Вставка</a>
+                  <a class="" href="#">Замочки</a>
+                  <a class="" href="#">Цепочки и шнурки</a>
+                  <a class="" href="#">Швенцы</a>
+                </div> -->
+
+
+
+              </ul>
+            </li>
+      			<li class="header-nav_item"><a class="has-subnav" href="">Подбор по зодиаку</a><!--<span>&#x25BC;</span>-->
+              <ul class="level-2">
+                <li class="submenu"><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+              </ul></li>
+      			</li>
+      			<li class="header-nav_item"><a class="has-subnav" href="">Доставка</a></li>
+      			<li class="header-nav_item"><a class="has-subnav" href="">Оплата</a></li>
+      			<li class="header-nav_item"><a class="has-subnav" href="">Новинки</a></li>
+      			<li class="header-nav_item"><a class="has-subnav" href="">Акции</a></li>
+      			<li class="header-nav_item"><a class="has-subnav" href="">Распродажа</a></li>
+      			<li class="header-nav_item"><a class="has-subnav" href="">Оптовикам</a></li>
+      		</ul>
+      	</div>
+    </div>
+  </div>
+</div>
+<!-- END header -->
+
+<!-- START main -->
+<div class="main">
+  <form action="#" method="#" id="js-register-form">
+    <div class="userContact">
+      <div class="l-layout">
+        <h2 class="order-title">Оформление заказа</h2>
+        <!--START l-order-left-->
+        <div class="l-order-left">
+          <div class="float-label">
+            <input id="name" class="userContact_name samotsvet-input" name="form_name" type="text">
+              <label for="name">ФИО <span class="star"></span></label>
+          </div>
+          <div class="float-label">
+            <input id="number" class="userContact_number samotsvet-input" name="form_tel" type="tel">
+              <label for="number">Телефон <span class="star"></span></label>
+          </div>
+          <div class="float-label">
+            <input id="email" class="userContact_email samotsvet-input" name="form_email" type="email">
+              <label for="email">E-mail <span class="star"></span></label>
+          </div>
+          <p class="userContact_info">* Поля обязательные к заполнению</p>
+        </div>
+        <!--END l-order-left-->
+
+        <!--START l-order-right-->
+        <div class="l-order-right">
+
+          <div class="float-label">
+            <select id="mounth">
+              <option value="hide">Город</option>
+              <option value="Vladivostok" rel="icon-temperature">Владивосток</option>
+              <option value="Odessa">Одесса</option>
+              <option value="Samara">Самара</option>
+              <option value="Syktyvkar">Сыктывкар</option>
+              <option value="Karaganda">Караганда</option>
+            </select>
+          </div>
+          <div class="float-label">
+            <textarea class="samotsvet-input" name="name" placeholder="Адрес доставки"></textarea>
+          </div>
+        </div>
+
+      </div>
+      <!--END l-order-right-->
+    </div>
+    <div class="delivery">
+      <div class="l-layout">
+        <h2 class="order-title">Варианты доставки</h2>
+        <div class="delivery-list">
+          <!-- START delivery-list-item -->
+          <div class="delivery-list-item">
+            <img src="img/delivery-1.jpg" alt="">
+            <span class="delivery-list-item_title">Курьером</span>
+            <input id="courier" name ="delivery" class="delivery-list-item_radio" type="radio" value="courier">
+            <label for="courier"></label>
+          </div>
+          <!-- END delivery-list-item -->
+          <!-- START delivery-list-item -->
+          <div class="delivery-list-item">
+            <img src="img/delivery-2.jpg" alt="">
+            <span class="delivery-list-item_title">Почта России</span>
+            <input id="post-of-Russia" name ="delivery" class="delivery-list-item_radio" type="radio" value="post-of-Russia">
+            <label for="post-of-Russia"></label>
+          </div>
+          <!-- END delivery-list-item -->
+          <!-- START delivery-list-item -->
+          <div class="delivery-list-item">
+            <img src="img/delivery-3.jpg" alt="">
+            <span class="delivery-list-item_title">Постмат</span>
+            <input id="pochtomat" name ="delivery" class="delivery-list-item_radio" type="radio" value="pochtomat" checked="checked">
+            <label for="pochtomat"></label>
+          </div>
+          <!-- END delivery-list-item -->
+          <!-- START delivery-list-item -->
+          <div class="delivery-list-item">
+            <img src="img/delivery-4.jpg" alt="">
+            <span class="delivery-list-item_title">Самовывоз</span>
+            <input id="pickup" name ="delivery" class="delivery-list-item_radio" type="radio" value="pickup">
+            <label for="pickup"></label>
+          </div>
+          <!-- END delivery-list-item -->
+          <!-- START delivery-list-item -->
+          <div class="delivery-list-item">
+            <img src="img/delivery-5.jpg" alt="">
+            <span class="delivery-list-item_title">За счет клиента</span>
+            <input id="customer-account" name ="delivery" class="delivery-list-item_radio" type="radio" value="customer-account">
+            <label for="customer-account"></label>
+          </div>
+          <!-- END delivery-list-item -->
+          <!-- START delivery-list-item -->
+          <div class="delivery-list-item">
+            <img src="img/delivery-6.jpg" alt="">
+            <span class="delivery-list-item_title">более 2000руб.</span>
+            <input id="more-than-2000" name ="delivery" class="delivery-list-item_radio" type="radio" value="more-than-2000">
+            <label for="more-than-2000"></label>
+          </div>
+          <!-- END delivery-list-item -->
+          <!-- START delivery-list-item -->
+          <div class="delivery-list-item">
+            <img src="img/delivery-6.jpg" alt="">
+            <span class="delivery-list-item_title">ОПТ</span>
+            <input id="opt" name ="delivery" class="delivery-list-item_radio" type="radio" value="opt">
+            <label for="opt"></label>
+          </div>
+          <!-- END delivery-list-item -->
+          <!-- START delivery-list-item -->
+          <div class="delivery-list-item">
+            <img src="img/delivery-7.jpg" alt="">
+            <span class="delivery-list-item_title">Дозаказ</span>
+            <input id="reorder" name ="delivery" class="delivery-list-item_radio" type="radio" value="reorder">
+            <label for="reorder"></label>
+          </div>
+          <!-- END delivery-list-item -->
+        </div><!-- END delivery-list -->
+        <p class="delivery-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+      </div>
+    </div>
+    <div class="payment">
+      <div class="l-layout">
+        <h2 class="order-title">Варианты оплаты</h2>
+        <div class="payment-list">
+          <!-- START payment-list-item -->
+          <div class="payment-list-item">
+            <img src="img/payment-1.png" alt="">
+            <input id="cash-couriers" name ="payment" class="payment-list-item_radio" type="radio" value="cash-couriers">
+            <label for="cash-couriers"></label>
+            <p class="payment-list-item_title">Наличные курьеру</p>
+          </div>
+          <!-- END payment-list-item -->
+          <!-- START payment-list-item -->
+          <div class="payment-list-item">
+            <img src="img/payment-2.png" alt="">
+            <input id="C.O.D" name ="payment" class="payment-list-item_radio" type="radio" value="C.O.D">
+            <label for="C.O.D"></label>
+            <p class="payment-list-item_title">Наложный платеж</p>
+          </div>
+          <!-- END payment-list-item -->
+          <!-- START payment-list-item -->
+          <div class="payment-list-item" data-tooltip="реквизиты для оплаты уточнит менеджер">
+            <img src="img/payment-3.png" alt="">
+            <input id="bank" name ="payment" class="payment-list-item_radio" type="radio" value="bank" checked="checked">
+            <label for="bank"></label>
+            <p class="payment-list-item_title">Сбербанк и Альфа-Банк</p>
+          </div>
+
+          <!-- END payment-list-item -->
+          <!-- START payment-list-item -->
+          <div class="payment-list-item">
+            <img src="img/payment-4.png" alt="">
+            <input id="yandex-money" name ="payment" class="payment-list-item_radio" type="radio" value="yandex-money">
+            <label for="yandex-money"></label>
+            <p class="payment-list-item_title">Яндекс деньги</p>
+          </div>
+          <!-- END payment-list-item -->
+          <!-- START payment-list-item -->
+          <div class="payment-list-item">
+            <img src="img/payment-5.png" alt="">
+            <input id="payment-reorder" name ="payment" class="payment-list-item_radio" type="radio" value="payment-reorder">
+            <label for="payment-reorder"></label>
+            <p class="payment-list-item_title">Дозаказ</p>
+          </div>
+          <!-- END payment-list-item -->
+        </div>
+      </div>
+    </div>
+    <div class="comments">
+      <div class="l-layout">
+        <div class="comments-left">
+          <textarea class="samotsvet-input" name="name" placeholder="Комментарий к заказу"></textarea>
+        </div>
+        <div class="comments-right">
+          <div class="messege js-form-messege"></div>
+          <div class="l-btn">
+          <button type="submit" name="button" class="form-btn">Оформить заказ</button>
+          <a class="back-btn" href="#">Назад в корзину</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="userOrder">
+      <div class="l-layout">
+        <h2 class="order-title">Ваш заказ</h2>
+        <!-- START productCard -->
+        <div class="productCard">
+          <div class="productCard-img"><img src="img/product-img-1.jpg" alt=""></div>
+          <div class="productCard-data">
+            <a class="productCard-title" href="">КОМПЛЕКТ: PL-7003 Lorem ipsum dolor</a>
+            <div class="productCard-quantity">
+              <div class="productCard-quantity_title">количество</div>
+              <div class="productCard-quantity_number">
+                <span class="minus"></span>
+                <input class="number" type="text" value="1">
+                <span class="plus"></span>
+              </div>
+            </div>
+
+            <div class="productCard-more"><a href="#">подробнее</a></div>
+            <div class="productCard-more-open">
+              <a href="#">свернуть</a>
+              <div class="properties">
+                <span>Покрытие</span><span class="properties-value">Родий</span>
+                <span>Вставка</span><span class="properties-value">Майолика</span>
+                <span>Диаметр</span><span class="properties-value">10-12мм</span>
+              </div>
+            </div>
+            <div class="productCard-price">
+              <div class="productCard-price_title">цена</div>
+              <div class="productCard-price_number">414222 <span>₽</span></div>
+            </div>
+            <div class="productCard-discount">
+              <div class="productCard-discount_title">скидка</div>
+              <div class="productCard-discount_number">10 <span>%</span></div>
+            </div>
+            <div class="productCard-sum">
+              <div class="productCard-sum_title">сумма</div>
+              <div class="productCard-sum_number">414222 <span>₽</span></div>
+            </div>
+            <button type="button" name="delete" class="productCard-delete"></button>
+          </div>
+        </div>
+        <!-- END productCard -->
+        <!-- START productCard -->
+        <div class="productCard">
+          <div class="productCard-img"><img src="img/product-img-1.jpg" alt=""></div>
+          <div class="productCard-data">
+            <a class="productCard-title" href="">КОМПЛЕКТ: PL-7003 Lorem ipsum dolor</a>
+            <div class="productCard-quantity">
+              <div class="productCard-quantity_title">количество</div>
+              <div class="productCard-quantity_number">
+                <span class="minus"></span>
+                <input class="number" type="text" value="1">
+                <span class="plus"></span>
+              </div>
+            </div>
+            <div class="productCard-more"><a href="#">подробнее</a></div>
+            <div class="productCard-more-open">
+              <a href="#">свернуть</a>
+              <div class="properties">
+                <span>Покрытие</span><span class="properties-value">Родий</span>
+                <span>Вставка</span><span class="properties-value">Майолика</span>
+                <span>Диаметр</span><span class="properties-value">10-12мм</span>
+              </div>
+            </div>
+            <div class="productCard-price">
+              <div class="productCard-price_title">цена</div>
+              <div class="productCard-price_number">414222 <span>₽</span></div>
+            </div>
+            <div class="productCard-discount">
+              <div class="productCard-discount_title">скидка</div>
+              <div class="productCard-discount_number">10 <span>%</span></div>
+            </div>
+            <div class="productCard-sum">
+              <div class="productCard-sum_title">сумма</div>
+              <div class="productCard-sum_number">414222 <span>₽</span></div>
+            </div>
+            <button type="button" name="delete" class="productCard-delete"></button>
+          </div>
+        </div>
+        <!-- END productCard -->
+        <div class="l-btn">
+          <button type="button" name="button" class="form-btn">Оформить заказ</button>
+          <a class="back-btn" href="#">Назад в каталог</a>
+        </div>
+        <div class="userOrder-total">
+          <span class="userOrder-total_text">итого</span>
+          <div class="userOrder-total_price">414222 <span>₽</span></div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<!-- END main -->
+
+<!-- START footer -->
+<div class="footer">
+  <a href="#" class="footer-partners">Наши партнеры</a>
+  <div class="l-layout">
+    <!-- START l-footer -->
+    <div class="l-footer">
+      <div class="footer-contact">
+        <div class="footer-contact_logo"><img src="img/logo.png" alt=""></div>
+        <div class="footer-social-mobile">
+          <div class="social_btn"><a href="#" class="tw"></a></div>
+          <div class="social_btn"><a href="#" class="fb"></a></div>
+          <div class="social_btn"><a href="#" class="vk"></a></div>
+          <div class="social_btn"><a href="#" class="inst"></a></div>
+        </div>
+        <div class="footer-contact_foneNumber">
+          <p><span>+7 (495)</span>723-33-63</p>
+          <p><span>+7 (495)</span>723-33-63</p>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <ul class="footer-menu-list">
+          <li class="footer-menu_item"><a href="#">Каталог</a></li>
+          <li class="footer-menu_item"><a href="#">Подбор по зодиаку</a></li>
+          <li class="footer-menu_item"><a href="#">Доставка</a></li>
+          <li class="footer-menu_item"><a href="#">Оплата</a></li>
+          <li class="footer-menu_item"><a href="#">Новинки Акции</a></li>
+          <li class="footer-menu_item"><a href="#">Распродажа</a></li>
+          <li class="footer-menu_item"><a href="#">Оптовикам</a></li>
+          <li class="footer-menu_item"><a href="#"></a></li>
+        </ul>
+
+          <ul class="footer-menu-list">
+            <li class="footer-menu_item"><a href="#">БРАСЛЕТЫ</a></li>
+            <li class="footer-menu_item"><a href="#">БРОШИ</a></li>
+            <li class="footer-menu_item"><a href="#">БУСЫ </a></li>
+            <li class="footer-menu_item"><a href="#">Жемчуг</a></li>
+            <li class="footer-menu_item"><a href="#">КОЛЬЦА</a></li>
+            <li class="footer-menu_item"><a href="#">КОМПЛЕКТЫ </a></li>
+            <li class="footer-menu_item"><a href="#">КУЛОНЫ</a></li>
+            <li class="footer-menu_item"><a href="#">СЕРЬГИ</a></li>
+            <li class="footer-menu_item"><a href="#">СУВЕНИРЫ</a></li>
+          </ul>
+
+          <ul class="footer-menu-list">
+            <li class="footer-menu_item"><a href="#">БРАСЛЕТЫ</a></li>
+            <li class="footer-menu_item"><a href="#">БРОШИ</a></li>
+            <li class="footer-menu_item"><a href="#">БУСЫ </a></li>
+            <li class="footer-menu_item"><a href="#">Жемчуг</a></li>
+            <li class="footer-menu_item"><a href="#">Кольца</a></li>
+          </ul>
+      </div>
+      <div class="footer-social">
+        <div class="social_btn"><a href="#" class="tw"></a></div>
+        <div class="social_btn"><a href="#" class="fb"></a></div>
+        <div class="social_btn"><a href="#" class="vk"></a></div>
+        <div class="social_btn"><a href="#" class="ok"></a></div>
+        <div class="social_btn"><a href="#" class="inst"></a></div>
+        <div class="social_btn"><a href="#" class="youtube"></a></div>
+        <p class="footer-social_copyright">2008-2014 © Samotsvet.ru - интернет-магазин украшений из натуральных камнейи элитной бижутерии. Все права защищены. Бесплатная доставка по России*.</p>
+      </div>
+    </div>
+    <!-- END l-footer -->
+
+</div>
+<!-- END footer -->
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.umd.js"></script>
+  <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+
+  <script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

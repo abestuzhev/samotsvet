@@ -1,0 +1,189 @@
+.footer {
+  @include clear;
+  // height: 270px;
+  background: $expresion-color url($img-dir + 'footer-bg.jpg') 0 0 no-repeat;
+  background-size: cover;
+  padding-top: 45px;
+  // padding-bottom: 45px;
+  position: relative;
+
+  .l-footer {
+    text-align: justify;
+    @include full-width;
+
+    @media all and (max-width: 840px) {
+      text-align: left;
+    }
+  }
+
+  &-contact {
+    display: inline-block;
+    @extend %outline;
+    vertical-align: top;
+
+    @media all and (max-width: 840px) {
+      display: block;
+      float: left;
+      margin-right: 50px;
+      margin-bottom: 30px;
+    }
+
+    @media all and (max-width: 580px) {
+      display: block;
+      width: 100%;
+    }
+
+    &_logo {
+      float: left;
+      width: 160px;
+      text-align: center;
+      margin-bottom: 15px;
+
+      @media all and (max-width: 580px) {
+        width: auto;
+      }
+    }
+
+    &_foneNumber {
+      color: #FFF;
+
+      span {
+        font-size: 12px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      @media all and (max-width: 580px) {
+        float: right;
+        margin-top: 15px;
+      }
+    }
+
+
+    .footer-social-mobile {
+      display: none;
+
+      .social_btn {
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      @media all and (max-width: 580px) {
+        display: block;
+        text-align: right;
+      }
+    }
+  }
+
+  &-menu {
+    // float: left;
+    display: inline-block;
+    vertical-align: top;
+
+    @media all and (max-width: 840px) {
+      display: block;
+      text-align: justify;
+      @include full-width;
+    }
+
+    @media all and (max-width: 580px) {
+      display: none;
+    }
+
+    &-list {
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 10px;
+      margin-right: 50px;
+
+
+      @media all and (max-width: 840px) {
+        display: inline-block;
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+
+    &_item {
+      margin-bottom: 10px;
+
+
+      a {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #FFF;
+
+        &:hover {
+          color: $expresion-color;
+          text-decoration: underline;
+        }
+      }
+    }
+
+  }
+
+  &-social {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 170px;
+    @extend %outline;
+
+    @media all and (max-width: 840px) {
+      float: left;
+      display: block;
+      width: 100%;
+    }
+
+    .social_btn {
+
+      @media all and (max-width: 580px) {
+        display: none;
+      }
+    }
+
+    &_copyright {
+      color: #FFF;
+      font-weight: 400;
+      font-size: 12px;
+      margin-top: 0;
+    }
+  }
+
+  &-partners {
+    width: 350px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 164px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    margin-left: -175px;
+    top: -30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    background: url($img-dir + '/partners-violet.png') 0 0 no-repeat;
+    @extend %transition;
+
+    &:hover {
+      background: url($img-dir + '/partners-green.png') 0 0 no-repeat;
+    }
+
+    @media all and (max-width: 580px) {
+      display: none;
+    }
+  }
+} //end footer

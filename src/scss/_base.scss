@@ -1,0 +1,130 @@
+$default-font-size: 12px;
+$img-dir: '../img/';
+$expresion-color: #44A397;
+$dark-color: #2a2531;
+
+body {
+  font-size: $default-font-size;
+  font-family: "Tahoma", sans-serif;
+  background-color: #fff;
+  color: #2A2531;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+  @extend %transition;
+
+  &:hover {
+    color: $expresion-color;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding: 8px;
+  background-color: transparent;
+  color: $expresion-color;
+  font-size: 11px;
+}
+
+select {
+  border: none;
+  border-bottom: 1px solid #44A397;
+  border-left: 1px solid #44A397;
+  padding: 8px;
+  background-color: transparent;
+  color: #fff;
+  padding-left: 15px;
+  width: 100%;
+}
+
+option {
+  background-color:#2a2531;
+}
+
+ %outline {
+   outline: 1px solid #ccc;
+ }
+
+%transition {
+  transition: all .2s ease-out;
+}
+
+@mixin clear {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin full-width {
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.l-layout {
+  @extend %outline;
+  @include clear;
+  max-width: 1024px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+
+  @media all and (max-width: 580px) {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  @media all and (max-width: 350px) {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.samotsvet-subtitle {
+  padding: 20px 0;
+  color: #FFF;
+  font-family: "NotoSans";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $dark-color;
+  background: url($img-dir + 'subtitle-bg.jpg') 0 0 no-repeat;
+  background-size: cover;
+
+  h3 {
+    margin-left: 40px;
+  }
+}
+
+.productCard .productCard-data .is-show {
+  display: inline-block;
+}
+.productCard .productCard-data .is-hide {
+  display: none;
+}
