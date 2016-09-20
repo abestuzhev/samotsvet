@@ -5,16 +5,17 @@
   <title>Оформление заказа</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.png">
-  <!--[if lt IE 10]><script src="js/IE9.js"></script><![endif]-->
-  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+  <!--[if lte IE 11]><script src="js/IE9.js"></script><![endif]-->
+  <!--[if lte IE 11]><script src="js/html5shiv.js"></script><![endif]-->
   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
-  <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+  <!--[if lte IE 11]><link href="css/ie.css" rel="stylesheet" type="text/css"/><![endif]-->
+
 
 </head>
-<body>
+<body class="no-responsive">
 
 <!-- START header -->
 <div class="header">
@@ -41,54 +42,43 @@
   </div>
   <div class="header-nav">
     <div class="l-layout">
-      <!-- <ul class="header-nav-list">
-        <li class="header-nav_item active"><a href="#">Каталог</a></li>
-        <li class="header-nav_item"><a href="#">Подбор по зодиаку</a></li>
-        <li class="point"><span></span></li>
-        <li class="header-nav_item"><a href="#">Доставка</a></li>
-        <li class="point"><span></span></li>
-        <li class="header-nav_item"><a href="#">Оплата</a></li>
-        <li class="point"><span></span></li>
-        <li class="header-nav_item"><a href="#">Новинки</a></li>
-        <li class="point"><span></span></li>
-        <li class="header-nav_item"><a href="#">Акции</a></li>
-        <li class="point"><span></span></li>
-        <li class="header-nav_item"><a href="#">Распродажа</a></li>
-        <li class="point"><span></span></li>
-        <li class="header-nav_item"><a href="#">Оптовикам</a></li>
-      </ul> -->
         <a href="#menu" class="menu-link active">
           <span></span>
           <span></span>
           <span></span>
         </a>
       	<div id="menu" class="menu">
-      		<ul class="header-nav-list" class="level-1">
+      		<ul class="header-nav-list level-1" >
       			<li class="header-nav_item"><a class="has-subnav" href="">Каталог</a>
               <ul class="wide level-2">
 
                 <div class="wide-item">
                   <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
                   <div class="wide-item_title">Браслеты</div>
+                  <!-- <ul class="wide-item-list">
+                    <li class="wide-item-list_item"><a class="" href="#">Камень</a></li>
+                    <li class="wide-item-list_item"><a class="" href="#">Шамбала</a></li>
+                    <li class="wide-item-list_item"><a class="" href="#">Майорка</a></li>
+                  </ul> -->
                   <a class="" href="#">Камень</a>
                   <a class="" href="#">Шамбала</a>
                   <a class="" href="#">Майорка</a>
                 </div>
                 <div class="wide-item">
-                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_img"><img src="img/subnav-2.jpg" alt=""></div>
                   <div class="wide-item_title">Броши</div>
                   <a class="" href="#">Бижутерия</a>
                   <a class="" href="#">Камни</a>
                 </div>
                 <div class="wide-item">
-                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_img"><img src="img/subnav-3.jpg" alt=""></div>
                   <div class="wide-item_title">Бусы</div>
                   <a class="" href="#">Цирконы</a>
                   <a class="" href="#">Камень</a>
                   <a class="" href="#">Майорка</a>
                 </div>
                 <div class="wide-item">
-                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_img"><img src="img/subnav-4.jpg" alt=""></div>
                   <div class="wide-item_title">Жемчуг</div>
                   <a class="" href="#">Браслеты</a>
                   <a class="" href="#">Бусы</a>
@@ -96,13 +86,13 @@
                   <a class="" href="#">Серьги</a>
                 </div>
                 <div class="wide-item">
-                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_img"><img src="img/subnav-5.jpg" alt=""></div>
                   <div class="wide-item_title">Кольца</div>
                   <a class="" href="#">Камни</a>
                   <a class="" href="#">Родий</a>
                 </div>
                 <div class="wide-item">
-                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_img"><img src="img/subnav-6.jpg" alt=""></div>
                   <div class="wide-item_title">Бижутерия</div>
                   <a class="" href="#">Браслеты</a>
                   <a class="" href="#">Колье</a>
@@ -112,14 +102,14 @@
                   <a class="" href="#">Серьги</a>
                 </div>
                 <div class="wide-item">
-                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_img"><img src="img/subnav-7.jpg" alt=""></div>
                   <div class="wide-item_title">Кулоны</div>
                   <!-- <div class="wide-item_"></div> -->
                   <a class="" href="#">Камень</a>
                   <a class="" href="#">Муранское стекло</a>
                 </div>
                 <div class="wide-item">
-                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_img"><img src="img/subnav-8.jpg" alt=""></div>
                   <div class="wide-item_title">Серьги</div>
                   <!-- <div class="wide-item_"></div> -->
                   <a class="" href="#">Камни</a>
@@ -127,14 +117,14 @@
                   <a class="" href="#">Пуссеты</a>
                 </div>
                 <div class="wide-item">
-                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_img"><img src="img/subnav-9.jpg" alt=""></div>
                   <div class="wide-item_title">Сувениры</div>
                   <!-- <div class="wide-item_"></div> -->
                   <a class="" href="#">Камни</a>
                   <a class="" href="#">Фигурки</a>
                 </div>
                 <div class="wide-item">
-                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                  <div class="wide-item_img"><img src="img/subnav-10.jpg" alt=""></div>
                   <div class="wide-item_title">Авторские</div>
                   <!-- <div class="wide-item_"></div> -->
                   <a class="" href="#">Браслеты</a>
@@ -143,8 +133,8 @@
                   <a class="" href="#">Кольца</a>
                   <a class="" href="#">Серьги</a>
                 </div>
-                <!-- <div class="wide-item">
-                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-11.jpg" alt=""></div>
                   <div class="wide-item_title">Элит</div>
                   <a class="" href="#">Браслеты</a>
                   <a class="" href="#">Колье</a>
@@ -152,9 +142,9 @@
                   <a class="" href="#">Комплекты</a>
                   <a class="" href="#">Родий</a>
                   <a class="" href="#">Кулоны</a>
-                </div> -->
-                <!-- <div class="wide-item">
-                  <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                </div>
+                <div class="wide-item">
+                  <div class="wide-item_img"><img src="img/subnav-12.jpg" alt=""></div>
                   <div class="wide-item_title">Фурнитура</div>
                   <a class="" href="#">Бусины</a>
                   <a class="" href="#">Упаковка</a>
@@ -162,17 +152,14 @@
                   <a class="" href="#">Замочки</a>
                   <a class="" href="#">Цепочки и шнурки</a>
                   <a class="" href="#">Швенцы</a>
-                </div> -->
-
-
-
+                </div>
               </ul>
             </li>
       			<li class="header-nav_item"><a class="has-subnav" href="">Подбор по зодиаку</a><!--<span>&#x25BC;</span>-->
               <ul class="level-2">
-                <li class="submenu"><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li class="submenu"><a href="">Пункт меню 1</a></li>
+                <li><a href="">Пункт меню 2</a></li>
+                <li><a href="">Пункт меню 3</a></li>
               </ul></li>
       			</li>
       			<li class="header-nav_item"><a class="has-subnav" href="">Доставка</a></li>
@@ -185,6 +172,7 @@
       	</div>
     </div>
   </div>
+  <!-- END header-nav -->
 </div>
 <!-- END header -->
 
@@ -194,19 +182,33 @@
     <div class="userContact">
       <div class="l-layout">
         <h2 class="order-title">Оформление заказа</h2>
+        <div class="message js-form-message"></div>
         <!--START l-order-left-->
         <div class="l-order-left">
           <div class="float-label">
-            <input id="name" class="userContact_name samotsvet-input" name="form_name" type="text">
-              <label for="name">ФИО <span class="star"></span></label>
+              <span class="input input--kaede">
+      					<input class="input__field input__field--kaede" type="text" id="input-35" name="form_name"/>
+      					<label class="input__label input__label--kaede" for="input-35">
+      						<span class="input__label-content input__label-content--kaede">ФИО <span class="star"></span></span>
+
+                </label>
+      				</span>
           </div>
           <div class="float-label">
-            <input id="number" class="userContact_number samotsvet-input" name="form_tel" type="tel">
-              <label for="number">Телефон <span class="star"></span></label>
+              <span class="input input--kaede">
+      					<input class="input__field input__field--kaede" type="text" id="input-36" name="form_tel"/>
+      					<label class="input__label input__label--kaede" for="input-36">
+      						<span class="input__label-content input__label-content--kaede">Телефон <span class="star"></span></span>
+      					</label>
+      				</span>
           </div>
           <div class="float-label">
-            <input id="email" class="userContact_email samotsvet-input" name="form_email" type="email">
-              <label for="email">E-mail <span class="star"></span></label>
+              <span class="input input--kaede">
+      					<input class="input__field input__field--kaede" type="text" id="input-37" name="form_email"/>
+      					<label class="input__label input__label--kaede" for="input-37">
+      						<span class="input__label-content input__label-content--kaede">E-mail <span class="star"></span></span>
+      					</label>
+      				</span>
           </div>
           <p class="userContact_info">* Поля обязательные к заполнению</p>
         </div>
@@ -215,7 +217,7 @@
         <!--START l-order-right-->
         <div class="l-order-right">
 
-          <div class="float-label">
+          <div class="select-city">
             <select id="mounth">
               <option value="hide">Город</option>
               <option value="Vladivostok" rel="icon-temperature">Владивосток</option>
@@ -240,65 +242,82 @@
           <!-- START delivery-list-item -->
           <div class="delivery-list-item">
             <img src="img/delivery-1.jpg" alt="">
-            <span class="delivery-list-item_title">Курьером</span>
-            <input id="courier" name ="delivery" class="delivery-list-item_radio" type="radio" value="courier">
-            <label for="courier"></label>
+            <span class="delivery-list-item_title">Курьером</span></span>
+            <div class="radio">
+              <input id="courier" name ="delivery" class="delivery-list-item_radio" type="radio" value="courier">
+              <label for="courier"></label>
+            </div>
+
           </div>
           <!-- END delivery-list-item -->
           <!-- START delivery-list-item -->
           <div class="delivery-list-item">
             <img src="img/delivery-2.jpg" alt="">
             <span class="delivery-list-item_title">Почта России</span>
-            <input id="post-of-Russia" name ="delivery" class="delivery-list-item_radio" type="radio" value="post-of-Russia">
-            <label for="post-of-Russia"></label>
+            <div class="radio">
+              <input id="post-of-Russia" name ="delivery" class="delivery-list-item_radio" type="radio" value="post-of-Russia">
+              <label for="post-of-Russia"></label>
+            </div>
           </div>
           <!-- END delivery-list-item -->
           <!-- START delivery-list-item -->
           <div class="delivery-list-item">
             <img src="img/delivery-3.jpg" alt="">
             <span class="delivery-list-item_title">Постмат</span>
-            <input id="pochtomat" name ="delivery" class="delivery-list-item_radio" type="radio" value="pochtomat" checked="checked">
-            <label for="pochtomat"></label>
+            <div class="radio">
+              <input id="pochtomat" name ="delivery" class="delivery-list-item_radio" type="radio" value="pochtomat" checked="checked">
+              <label for="pochtomat"></label>
+            </div>
           </div>
           <!-- END delivery-list-item -->
           <!-- START delivery-list-item -->
           <div class="delivery-list-item">
             <img src="img/delivery-4.jpg" alt="">
             <span class="delivery-list-item_title">Самовывоз</span>
-            <input id="pickup" name ="delivery" class="delivery-list-item_radio" type="radio" value="pickup">
-            <label for="pickup"></label>
+            <div class="radio">
+              <input id="pickup" name ="delivery" class="delivery-list-item_radio" type="radio" value="pickup">
+              <label for="pickup"></label>
+            </div>
           </div>
           <!-- END delivery-list-item -->
           <!-- START delivery-list-item -->
           <div class="delivery-list-item">
             <img src="img/delivery-5.jpg" alt="">
             <span class="delivery-list-item_title">За счет клиента</span>
-            <input id="customer-account" name ="delivery" class="delivery-list-item_radio" type="radio" value="customer-account">
-            <label for="customer-account"></label>
+            <div class="radio">
+              <input id="customer-account" name ="delivery" class="delivery-list-item_radio" type="radio" value="customer-account">
+              <label for="customer-account"></label>
+            </div>
           </div>
           <!-- END delivery-list-item -->
           <!-- START delivery-list-item -->
           <div class="delivery-list-item">
             <img src="img/delivery-6.jpg" alt="">
             <span class="delivery-list-item_title">более 2000руб.</span>
-            <input id="more-than-2000" name ="delivery" class="delivery-list-item_radio" type="radio" value="more-than-2000">
-            <label for="more-than-2000"></label>
+            <div class="radio">
+              <input id="more-than-2000" name ="delivery" class="delivery-list-item_radio" type="radio" value="more-than-2000">
+              <label for="more-than-2000"></label>
+            </div>
           </div>
           <!-- END delivery-list-item -->
           <!-- START delivery-list-item -->
           <div class="delivery-list-item">
             <img src="img/delivery-6.jpg" alt="">
             <span class="delivery-list-item_title">ОПТ</span>
-            <input id="opt" name ="delivery" class="delivery-list-item_radio" type="radio" value="opt">
-            <label for="opt"></label>
+            <div class="radio">
+              <input id="opt" name ="delivery" class="delivery-list-item_radio" type="radio" value="opt">
+              <label for="opt"></label>
+            </div>
           </div>
           <!-- END delivery-list-item -->
           <!-- START delivery-list-item -->
           <div class="delivery-list-item">
             <img src="img/delivery-7.jpg" alt="">
             <span class="delivery-list-item_title">Дозаказ</span>
-            <input id="reorder" name ="delivery" class="delivery-list-item_radio" type="radio" value="reorder">
-            <label for="reorder"></label>
+            <div class="radio">
+              <input id="reorder" name ="delivery" class="delivery-list-item_radio" type="radio" value="reorder">
+              <label for="reorder"></label>
+            </div>
           </div>
           <!-- END delivery-list-item -->
         </div><!-- END delivery-list -->
@@ -312,24 +331,30 @@
           <!-- START payment-list-item -->
           <div class="payment-list-item">
             <img src="img/payment-1.png" alt="">
-            <input id="cash-couriers" name ="payment" class="payment-list-item_radio" type="radio" value="cash-couriers">
-            <label for="cash-couriers"></label>
+            <div class="radio">
+              <input id="cash-couriers" name ="payment" class="payment-list-item_radio" type="radio" value="cash-couriers">
+              <label for="cash-couriers"></label>
+            </div>
             <p class="payment-list-item_title">Наличные курьеру</p>
           </div>
           <!-- END payment-list-item -->
           <!-- START payment-list-item -->
           <div class="payment-list-item">
             <img src="img/payment-2.png" alt="">
-            <input id="C.O.D" name ="payment" class="payment-list-item_radio" type="radio" value="C.O.D">
-            <label for="C.O.D"></label>
+            <div class="radio">
+              <input id="C.O.D" name ="payment" class="payment-list-item_radio" type="radio" value="C.O.D">
+              <label for="C.O.D"></label>
+            </div>
             <p class="payment-list-item_title">Наложный платеж</p>
           </div>
           <!-- END payment-list-item -->
           <!-- START payment-list-item -->
           <div class="payment-list-item" data-tooltip="реквизиты для оплаты уточнит менеджер">
             <img src="img/payment-3.png" alt="">
-            <input id="bank" name ="payment" class="payment-list-item_radio" type="radio" value="bank" checked="checked">
-            <label for="bank"></label>
+            <div class="radio">
+              <input id="bank" name ="payment" class="payment-list-item_radio" type="radio" value="bank" checked="checked">
+              <label for="bank"></label>
+            </div>
             <p class="payment-list-item_title">Сбербанк и Альфа-Банк</p>
           </div>
 
@@ -337,16 +362,20 @@
           <!-- START payment-list-item -->
           <div class="payment-list-item">
             <img src="img/payment-4.png" alt="">
-            <input id="yandex-money" name ="payment" class="payment-list-item_radio" type="radio" value="yandex-money">
-            <label for="yandex-money"></label>
+            <div class="radio">
+              <input id="yandex-money" name ="payment" class="payment-list-item_radio" type="radio" value="yandex-money">
+              <label for="yandex-money"></label>
+            </div>
             <p class="payment-list-item_title">Яндекс деньги</p>
           </div>
           <!-- END payment-list-item -->
           <!-- START payment-list-item -->
           <div class="payment-list-item">
             <img src="img/payment-5.png" alt="">
-            <input id="payment-reorder" name ="payment" class="payment-list-item_radio" type="radio" value="payment-reorder">
-            <label for="payment-reorder"></label>
+            <div class="radio">
+              <input id="payment-reorder" name ="payment" class="payment-list-item_radio" type="radio" value="payment-reorder">
+              <label for="payment-reorder"></label>
+            </div>
             <p class="payment-list-item_title">Дозаказ</p>
           </div>
           <!-- END payment-list-item -->
@@ -359,7 +388,6 @@
           <textarea class="samotsvet-input" name="name" placeholder="Комментарий к заказу"></textarea>
         </div>
         <div class="comments-right">
-          <div class="messege js-form-messege"></div>
           <div class="l-btn">
           <button type="submit" name="button" class="form-btn">Оформить заказ</button>
           <a class="back-btn" href="#">Назад в корзину</a>
@@ -533,6 +561,42 @@
   <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 
   <script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+  <script src="js/classie.js"></script>
   <script src="js/main.js"></script>
+  <script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
 </body>
 </html>

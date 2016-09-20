@@ -114,3 +114,224 @@
 .youtube {
   background-image: url($img-dir + '/social/youtube.svg');
 }
+
+
+/* Kaede */
+
+
+.input--kaede {
+	display: block;
+	overflow: hidden;
+  height: 29px;
+  border-bottom: 1px solid $expresion-color;
+  border-left: 1px solid $expresion-color;
+}
+
+.input__field--kaede {
+	position: absolute;
+	top: 0;
+	right: 100%;
+	width: 80%;
+	height: 100%;
+	color: $expresion-color;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.input__label--kaede {
+	z-index: 10;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	cursor: text;
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.input__label-content--kaede {
+	// padding: 1.5em 0;
+  // width: 50px;
+  // display: inline-block;
+  // background-color: red;
+  // vertical-align: top;
+  position: relative;
+}
+
+.input__field--kaede:focus,
+.input--filled .input__field--kaede {
+	-webkit-transform: translate3d(100%, 0, 0);
+	transform: translate3d(100%, 0, 0);
+	-webkit-transition-delay: 0.06s;
+	transition-delay: 0.06s;
+}
+
+.input__field--kaede:focus + .input__label--kaede,
+.input--filled .input__label--kaede  {
+	-webkit-transform: translate3d(85%, 0, 0);
+	transform: translate3d(85%, 0, 0);
+	pointer-events: none;
+}
+
+@media screen and (max-width: 34em) {
+	.input__field--kaede:focus + .input__label--kaede,
+	.input--filled .input__label--kaede  {
+		-webkit-transform: translate3d(65%, 0, 0) scale3d(0.65, 0.65, 1);
+		transform: translate3d(65%, 0, 0) scale3d(0.65, 0.65, 1);
+		pointer-events: none;
+	}
+}
+//
+
+
+@-moz-keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 8px;
+  }
+  50% {
+    height: 10px;
+    width: 8px;
+  }
+}
+@-webkit-keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 8px;
+  }
+  50% {
+    height: 10px;
+    width: 8px;
+  }
+}
+@keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 8px;
+  }
+  50% {
+    height: 10px;
+    width: 8px;
+  }
+}
+@-moz-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.radio {
+  position: absolute;
+  bottom: -16px;
+  height: 30px;
+  width: 30px;
+  left: 50%;
+  margin-left: -16px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.radio label {
+  display: block;
+  height: 30px;
+  position: relative;
+  width: 30px;
+  cursor: pointer;
+}
+.radio label:before {
+  content: '';
+  display: block;
+  height: 26px;
+  left: 0px;
+  border-radius: 50px;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0px;
+  width: 26px;
+}
+.radio label:after {
+  -moz-transform: scaleX(-1) rotate(135deg);
+  -ms-transform: scaleX(-1) rotate(135deg);
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-right: 4px solid transparent;
+  border-top: 4px solid transparent;
+  content: '';
+  display: block;
+  height: 10px;
+  left: 6px;
+  position: absolute;
+  top: 14px;
+  width: 8px;
+}
+.radio input {
+  display: none;
+}
+.radio input:checked + label {
+  border:none;
+  background-color: transparent;
+}
+.radio input:checked + label:after {
+  -moz-animation: check 0.8s;
+  -webkit-animation: check 0.8s;
+  animation: check 0.8s;
+  border-color: #000;
+}
+.radio input:checked + label:before {
+  -moz-animation: rotate 0.8s;
+  -webkit-animation: rotate 0.8s;
+  animation: rotate 0.8s;
+  border-color: #000;
+}

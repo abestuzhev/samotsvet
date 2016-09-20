@@ -12,10 +12,14 @@ $(document).ready(function(){
       form_tel: {
         required: true,
         digits: true
-      },
-      invalidHandler: function(event, validator) {
-        $('js-form-messege').text('Заполните все обязательные поля');
       }
+
+    },
+    invalidHandler: function(event, validator) {
+      $('.js-form-message').text('Заполните все обязательные поля');
+    },
+    onkeyup: function(element) {
+      $('.js-form-message').text('');
     }
   });
 
