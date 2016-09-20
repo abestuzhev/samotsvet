@@ -18,7 +18,6 @@
 
   &-contact {
     display: inline-block;
-    @extend %outline;
     vertical-align: top;
 
     @media all and (max-width: 840px) {
@@ -138,7 +137,6 @@
     vertical-align: top;
     text-align: left;
     width: 170px;
-    @extend %outline;
 
     @media all and (max-width: 840px) {
       float: left;

@@ -46,10 +46,6 @@ select {
 option {
   background-color: #2a2531; }
 
-.footer-contact, .footer-social, .userContact .l-order-left,
-.userContact .l-order-right, .comments-left, .comments-right {
-  outline: 1px solid #ccc; }
-
 a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-partners, .userOrder .form-btn, .stone-card_button::after {
   transition: all .2s ease-out; }
 
@@ -510,7 +506,8 @@ a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-p
         right: -2px;
         width: 2px;
         height: 2px;
-        margin-top: -2px; }
+        margin-top: -2px;
+        border: 1px solid #44A397; }
       .header-nav_item a::after {
         content: '';
         position: absolute;

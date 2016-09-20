@@ -15,7 +15,6 @@
 
   .l-order-left,
   .l-order-right {
-    @extend %outline;
     width: 50%;
   }
 
@@ -363,7 +362,6 @@
   @include clear;
 
   &-left {
-    @extend %outline;
     float: left;
     width: 57%;
 
@@ -383,7 +381,6 @@
   }
 
   &-right {
-    @extend %outline;
     float: right;
     width: 43%;
     position: relative;
