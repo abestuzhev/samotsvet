@@ -233,7 +233,6 @@
 .payment {
   padding-top: 40px;
   width: 100%;
-  height: 300px;
   background: #248588 url($img-dir + 'payment-bg.jpg') 0 0 no-repeat;
   background-size: cover;
   padding-bottom: 60px;
@@ -526,7 +525,7 @@
       .properties {
         text-align: left;
         padding: 0 15px;
-        font-family: "NotoSans";
+        font-family: "Noto Sans";
         font-size: 12px;
         color: #3D4350;
         font-weight: 400;
@@ -638,7 +637,7 @@
   margin-bottom: 50px;
 }
 /* =The style for the lab
--------------------------------------------------------------- */
+-------------------------------- */
 #sidebar {
   float:left;
   // margin-right: 58px;
@@ -819,4 +818,368 @@ hr {
       opacity: 1;
     }
   }
+}
+
+//*****************************//
+//stock
+//*****************************//
+.stock-item {
+  // height: 390px;
+  padding-bottom: 180px;
+  border-bottom: 3px solid $expresion-color;
+  margin-bottom: 60px;
+  @include clear;
+  position: relative;
+  @media all and (max-width: 710px) {
+    padding-bottom: 0;
+  }
+
+  a {
+    color: #fff;
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  &-bg {
+    position: relative;
+    z-index: 0;
+    padding-top: 35px;
+    background: url($img-dir + 'stock-item-bg.jpg') 0 0 no-repeat;
+    background-size: cover;
+    @media all and (max-width: 710px) {
+      background-position: 0px -150px;
+    }
+
+  }
+
+  .bg-font {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    opacity: .5;
+    color: rgba(12, 143, 145, 0.54);
+    font-family: "Roboto Condensed";
+    font-size: 187px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 8px 10.2px 76px rgba(0, 0, 0, 0.35);
+    z-index: -1;
+
+    @media all and (max-width: 950px) {
+      font-size: 120px;
+    }
+    @media all and (max-width: 580px) {
+      top: -7px;
+      font-size: 80px;
+    }
+  }
+
+  &_title {
+    color: #FFF;
+    font-family: "Tahoma";
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+
+  }
+
+  &_text {
+    width: 55%;
+    font-family: "Tahoma";
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFF;
+    font-weight: 400;
+    // margin-bottom: 35px;
+    padding-bottom: 200px;
+
+    @media all and (max-width: 950px) {
+      width: 100%;
+    }
+    @media all and (max-width: 710px) {
+      padding-bottom: 0;
+      margin-bottom: 30px;
+    }
+    @media all and (max-width: 580px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    span {
+      text-transform: uppercase;
+      color: $expresion-color;
+      font-weight: bold;
+    }
+  }
+  .l-stock-item {
+    position: absolute;
+    bottom: -40%;
+    left: 0;
+    @media all and (max-width: 710px) {
+      position: static;
+    }
+  }
+
+  &-left {
+    float: left;
+    padding: 0 20px;
+    // max-width: 100%;
+    @media all and (max-width: 580px) {
+      padding: 0;
+    }
+  }
+
+  &-right {
+    float: right;
+    padding: 0 20px;
+    @media all and (max-width: 580px) {
+      .stock-item-description {
+        height: auto;
+      }
+      padding: 0;
+    }
+  }
+
+  &-left, &-right {
+    width: 50%;
+
+    @media all and (max-width: 710px) {
+      float: none;
+      width: auto;
+    }
+  }
+
+  &_img, &-description {
+    height: 300px;
+  }
+
+  &_img {
+    overflow: hidden;
+    vertical-align: middle;
+    @media all and (max-width: 580px) {
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+
+    img, iframe {
+      text-align: center;
+      max-width: 100%;
+      height: 100%;
+    }
+
+    img {
+      @media all and (max-width: 950px) {
+        height: auto;
+      }
+    }
+  }
+
+  &-description {
+    border: 5px solid #fff;
+    padding: 12px;
+  }
+
+  &-post {
+    padding: 30px;
+    background-color: #fff;
+    height: 100%;
+
+    &_title {
+      text-align: center;
+      font-size: 14px;
+      color: #272031;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+    }
+
+    &_text {
+      text-align: center;
+      font-size: 14px;
+      color: $expresion-color;
+      font-weight: 400;
+    }
+  }
+}
+
+
+//*****************************//
+//map
+//*****************************//
+.map-title {
+  margin-bottom: 30px;
+}
+.l-map {
+  margin-bottom: 100px;
+}
+
+.l-map_button {
+  @include clear;
+}
+
+.l-map-left,
+.l-map-right {
+  width: 50%;
+  @extend %outline;
+}
+
+.l-map-left {
+  float: left;
+}
+
+.l-map-right {
+  float: right;
+  font-size: 0;
+}
+
+.map-button  {
+  width: 50%;
+  display: inline-block;
+  font-family: "Noto Sans";
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid $expresion-color;
+
+  a {
+    display: block;
+    color: #261E30;
+    padding: 11px;
+    padding-left: 40px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 8px;
+      width: 15px;
+      height: 19px;
+    }
+
+    &.map-all::after {
+      left: 10px;
+      top: 8px;
+      background: url($img-dir + 'map-button-icon-1.png') 0 0 no-repeat;
+    }
+
+    &.map-all:hover::after {
+      background: url($img-dir + 'map-button-icon-1white.png') 0 0 no-repeat;
+
+    }
+
+    &.map-list::after {
+      left: 10px;
+      top: 8px;
+      background: url($img-dir + 'map-button-icon-2.png') 0 0 no-repeat;
+    }
+
+    &.map-list:hover::after {
+      background: url($img-dir + 'map-button-icon-2white.png') 0 0 no-repeat;
+    }
+
+    &:hover {
+      background-color: $expresion-color;
+      color: #fff;
+    }
+  }
+}
+
+.map-content {
+  @include clear;
+  &-discription {
+    float: left;
+    width: 290px;
+  }
+
+  &_title {
+    color: #261E30;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &_text {
+    color: #261E30;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  &-canvas {
+    float: right;
+  }
+}
+
+//media
+
+@media all and (max-width: 935px) {
+
+  .delivery .delivery-list {
+    text-align: center;
+  }
+  .delivery-list-item {
+    margin-bottom: 25px;
+  }
+}
+
+
+@media all and (max-width: 630px) {
+  div.payment {
+    padding-bottom: 0;
+  }
+  .payment .payment-list {
+    text-align: center;
+  }
+  .payment .payment-list-item {
+    margin: 0 10px;
+    margin-bottom: 60px;
+
+  }
+}
+
+
+//*****************************//
+//hover card
+//*****************************//
+
+.hover-btn-layout {
+  // height: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  @include clear;
+}
+.catalog-mod a.buy {
+  display: block;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.catalog-mod a.buy:hover::before {
+  width: 100%;
+}
+.catalog-mod a.buy:hover {
+  color: #000;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+
+}
+
+.buy::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }

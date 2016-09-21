@@ -3,7 +3,7 @@
 
 .menu-link {
   color: #000;
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -12,7 +12,7 @@
   width: 16px;
   height: 2px;
   margin: 0 5px -3px 0;
-  background-color: #000;
+  background-color: #fff;
   margin-bottom: 4px;
 }
 
@@ -53,6 +53,7 @@
       width: 4px;
       padding: 19px 0;
       position: relative;
+
       span {
         position: absolute;
         top: 50%;
@@ -81,7 +82,7 @@
         position: relative;
 
 
-        &::before {
+        &.has-subnav::before {
           content: '';
           position: absolute;
           top: 50%;
@@ -92,7 +93,7 @@
           border: 1px solid $expresion-color;
         }
 
-        &::after {
+        &.has-subnav::after {
           content: '';
           position: absolute;
           bottom: 0;
@@ -148,8 +149,8 @@ span.has-subnav {
 
 .menu {
   position: absolute;
-  top: 7px;
-  left: 16px;
+  top: -87px;
+  left: 32px;
   z-index: 999;
 }
 
@@ -170,11 +171,11 @@ span.has-subnav {
 //////////
 //////////
 @media screen and (min-width: 801px) {
-
-nav {
-  border-top: 3px solid #00578b;
-  border-bottom: 1px solid #a4d05e;
-}
+//
+// nav {
+//   border-top: 3px solid #00578b;
+//   border-bottom: 1px solid #a4d05e;
+// }
 
 .menu-link { display: none; }
 
@@ -183,7 +184,8 @@ nav {
   overflow: visible;
 }
 
-.js .menu > ul li:hover > ul { display: block; } //flex
+// .js .menu > ul li:hover > ul { display: block; }
+.header-nav_item:hover > ul { display: block; }
 
 .menu span.has-subnav { display: none; }
 
@@ -288,9 +290,52 @@ nav {
   padding-left: 10px;
 }
 }
-
+//media
 @media all and (max-width: 1030px) {
   .wide-item {
-    margin-right: 0px;
+    // margin-right: 0px;
+    margin-bottom: 10px;
   }
+}
+
+@media all and (max-width: 1024px) {
+  .header-nav_item .header-nav_item-link {
+    padding: 13px 10px;
+  }
+}
+
+@media all and (max-width: 840px) {
+  .header-nav_item .header-nav_item-link {
+    padding: 13px 5px;
+  }
+}
+
+@media all and (max-width: 800px) {
+
+  .l-header {
+    height: 60px;
+  }
+  .header-nav_item .header-nav_item-link {
+    padding: 13px 20px;
+  }
+
+  .header-top_search,
+  .header-top_phoneNumber,
+  .header-top_logo {
+    display: none;
+  }
+
+  .header-nav {
+    padding: 0;
+    border: none;
+  }
+
+  .menu-link {
+    vertical-align: top;
+    margin-top: 23px;
+  }
+}
+
+@media all and (max-width: 710px) {
+
 }
