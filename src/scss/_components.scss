@@ -337,3 +337,91 @@ batton buy
   animation: rotate 0.8s;
   border-color: #000;
 }
+
+
+//*****************************//
+//hover card
+//*****************************//
+
+.hover-btn-layout {
+  // height: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  @include clear;
+}
+.catalog-mod a.buy {
+  display: block;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.catalog-mod a.buy:hover::before {
+  width: 100%;
+}
+.catalog-mod a.buy:hover {
+  color: #000;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+
+}
+
+.buy::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+//fast-access
+
+.item-popup {
+  overflow: hidden;
+  position: relative;
+  max-width: 255px;
+  max-height: 255px;
+  text-align: center;
+
+  &:hover::before {
+    bottom: 10px;
+  }
+
+  &:hover .fast-access {
+    top: 50%;
+    opacity: 1;
+    transform: translateY(-8%);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 100%;
+    background-color: $expresion-color;
+    opacity: .7;
+    transition: all 0.25s ease;
+  }
+}
+.item-popup .fast-access {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+	text-transform: uppercase;
+  letter-spacing: 5px;
+  position: absolute;
+  vertical-align: top;
+  top: 50%;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  transition: all 0.2s 0.1s ease;
+  opacity: 0;
+}

@@ -3009,9 +3009,9 @@ color:#fff
 	display: block;
 	position: relative;
 }
-.item-popup:hover .fast-access{
-	display: block;
-}
+// .item-popup:hover .fast-access{
+// 	display: block;
+// }
 .catalog-menu-left{
 	width: 224px;
 }
@@ -3473,22 +3473,22 @@ color: red;
 .catalog-mod:nth-child(3n+3) .catalog-info-block{
 	border-right: 1px solid #126e73;
 }                         */
-.fast-access {
-    background: rgba(255, 255, 255, 0.7) ;
-    border: 1px solid #261e30;
-    color: #261e30;
-	font-size: 15px;
-	text-transform: uppercase;
-    display: none;
-    height: 112px;
-    left: 16px;
-	font-weight: bold;
-    line-height: 111px;
-    position: absolute;
-    text-align: center;
-    top: 16px;
-    width: 222px;
-}
+// .fast-access {
+//   border: 1px solid #261e30;
+//   color: #fff;
+// 	font-size: 15px;
+//   line-height: 24px;
+// 	text-transform: uppercase;
+//   display: none;
+//   height: 112px;
+//   left: 16px;
+// 	font-weight: bold;
+//   line-height: 111px;
+//   position: absolute;
+//   text-align: center;
+//   top: 16px;
+//   width: 222px;
+// }
 .catalog-menu-left .first-level-menu > li, .catalog-menu-left .first-level-menu > li:last-child{
 	background: url(img/nav-plus.png) no-repeat 15px 10px;
 }
