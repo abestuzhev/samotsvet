@@ -112,6 +112,10 @@ option {
   }
 }
 
+p.is-visible {
+  display: block;
+}
+
 .no-responsive .l-layout {
   width: 1024px;
 }

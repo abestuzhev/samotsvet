@@ -28,11 +28,33 @@ $(document).ready(function(){
     $(this).parent('div').toggleClass('is-hide');
     $(this).parent('div').siblings('.productCard-more-open').toggleClass('is-show');
   })
+
   $('.productCard-more-open a').on('click', function(e){
     e.preventDefault();
     $(this).parent('div').toggleClass('is-show');
     $(this).parent('div').siblings('.productCard-more').toggleClass('is-hide');
   })
+  //
+  // $('.postmat').on('click', function(){
+  //   if($(this).children('.radio').find('input').attr('checked', 'checked')){
+  //     $('.delivery-description').toggleClass('is-visible');
+  //   }
+  // })
+
+  $('.postmat').on('click', function(){
+    $(this).children('.radio').find('input').attr('checked', 'checked');
+    $('.delivery-description').addClass('is-visible');
+  });
+
+
+
+  $('.js-cheked').on('click', function(e){
+    $(this).siblings('div').find('input').removeAttr('checked');
+    $(this).children('.radio').find('input').attr('checked', 'checked');
+    $('.delivery-description').removeClass('is-visible');
+  })
+
+
   /*
  Reference: http://jsfiddle.net/BB3JK/47/
  */

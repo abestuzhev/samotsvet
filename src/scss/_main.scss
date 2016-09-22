@@ -196,6 +196,7 @@
       width: 100px;
       height: 100px;
       text-align: center;
+      cursor: pointer;
 
       &_title {
         position: absolute;
@@ -221,6 +222,7 @@
   }
 
   &-description {
+    display: none;
     font: 14px/24px 'Tahoma', sans-serif;
     margin: 0 auto;
     width: 85%;
@@ -254,6 +256,8 @@
       height: 100px;
       text-align: center;
       margin-bottom: 35px;
+      cursor: pointer;
+
       label {
         cursor: pointer;
         height: 30px;

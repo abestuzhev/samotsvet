@@ -104,6 +104,9 @@ a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-p
       width: 100%;
       padding: 0 10px; } }
 
+p.is-visible {
+  display: block; }
+
 .no-responsive .l-layout {
   width: 1024px; }
 
@@ -1067,7 +1070,8 @@ span.has-subnav {
       position: relative;
       width: 100px;
       height: 100px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       .delivery-list-item_title {
         position: absolute;
         width: 100%;
@@ -1086,6 +1090,7 @@ span.has-subnav {
         background-color: #FFF;
         border: 1px solid #C4C2C2; }
   .delivery-description {
+    display: none;
     font: 14px/24px 'Tahoma', sans-serif;
     margin: 0 auto;
     width: 85%; }
@@ -1111,7 +1116,8 @@ span.has-subnav {
       width: 100px;
       height: 100px;
       text-align: center;
-      margin-bottom: 35px; }
+      margin-bottom: 35px;
+      cursor: pointer; }
       .payment-list-item label {
         cursor: pointer;
         height: 30px;
