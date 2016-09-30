@@ -28,11 +28,41 @@ $(document).ready(function(){
     $(this).parent('div').toggleClass('is-hide');
     $(this).parent('div').siblings('.productCard-more-open').toggleClass('is-show');
   })
+
   $('.productCard-more-open a').on('click', function(e){
     e.preventDefault();
     $(this).parent('div').toggleClass('is-show');
     $(this).parent('div').siblings('.productCard-more').toggleClass('is-hide');
   })
+  //
+  // $('.postmat').on('click', function(){
+  //   if($(this).children('.radio').find('input').attr('checked', 'checked')){
+  //     $('.delivery-description').toggleClass('is-visible');
+  //   }
+  // })
+
+  $('.postmat').on('click', function(){
+    $(this).children('.radio').find('input').attr('checked', 'checked');
+    $('.delivery-description-post').addClass('is-visible');
+    $('.delivery-description-post').addClass('animate');
+    $('.delivery-description-sdek').removeClass('is-visible');
+  });
+
+  $('.sdek').on('click', function(){
+    $(this).children('.radio').find('input').attr('checked', 'checked');
+    $('.delivery-description-sdek').addClass('is-visible');
+    $('.delivery-description-post').removeClass('is-visible');
+  });
+
+
+
+  $('.js-cheked').on('click', function(e){
+    $(this).siblings('div').find('input').removeAttr('checked');
+    $(this).children('.radio').find('input').attr('checked', 'checked');
+    $('.delivery-description').removeClass('is-visible');
+  })
+
+
   /*
  Reference: http://jsfiddle.net/BB3JK/47/
  */
@@ -80,6 +110,11 @@ $(document).ready(function(){
          $styledSelect.removeClass('active');
          $list.hide();
      });
+
+ });
+
+ $('.header-top_userAccount').on('clock', function(e){
+   e.preventDefault();
 
  });
 });
@@ -186,3 +221,37 @@ $(document).ready(function(){
             }
         });
     });
+
+    (function() {
+      // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+      if (!String.prototype.trim) {
+        (function() {
+          // Make sure we trim BOM and NBSP
+          var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+          String.prototype.trim = function() {
+            return this.replace(rtrim, '');
+          };
+        })();
+      }
+
+      [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+        // in case the input is already filled..
+        if( inputEl.value.trim() !== '' ) {
+          classie.add( inputEl.parentNode, 'input--filled' );
+        }
+
+        // events:
+        inputEl.addEventListener( 'focus', onInputFocus );
+        inputEl.addEventListener( 'blur', onInputBlur );
+      } );
+
+      function onInputFocus( ev ) {
+        classie.add( ev.target.parentNode, 'input--filled' );
+      }
+
+      function onInputBlur( ev ) {
+        if( ev.target.value.trim() === '' ) {
+          classie.remove( ev.target.parentNode, 'input--filled' );
+        }
+      }
+    })();

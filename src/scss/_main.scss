@@ -226,6 +226,30 @@
     font: 14px/24px 'Tahoma', sans-serif;
     margin: 0 auto;
     width: 85%;
+
+    &-sdek {
+
+      .l-delivery-description_button {
+        text-align: center;
+      }//l-delivery-description_button
+    }//-sdek
+
+    &_button {
+      display: inline-block;
+      color: #1C8587;
+      font-family: "Tahoma";
+      font-size: 11px;
+      font-weight: 700;
+      padding: 6px 33px;
+      background-color: #F6F6F6;
+      background-image: linear-gradient(to top, rgba(215, 215, 215, 0.23) 0%, rgba(255, 255, 255, 0.23) 100%);
+      box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.19);
+
+      &:hover {
+        box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.19);
+        background-color: #F6F6F6;
+      }
+    }//_button
   }
 }
 
@@ -1120,6 +1144,66 @@ hr {
     float: right;
   }
 }
+
+//poap
+
+.popap {
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  background-color: #0f5759;
+  color: #fff;
+  font-size: 12px;
+
+  &_button {
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    border: none;
+    font-family: "Tahoma";
+    font-size: 12px;
+    font-weight: 700;
+    padding: 14px 55px;
+    background-color: #F6F6F6;
+    background-image: linear-gradient(to top, rgba(215, 215, 215, 0.23) 0%, rgba(255, 255, 255, 0.23) 100%);
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.19);
+    @extend %transition;
+
+    &:hover {
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.19);
+      @extend %transition;
+    }
+
+  }
+
+  &_input {
+    width: 100%;
+    display: inline-block;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    padding: 15px 20px;
+    margin-bottom: 3px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.popap-entry {
+  width: 495px;
+  height: 300px;
+  padding: 0 85px;
+
+  &_top {
+    margin-bottom: 45px;
+  }
+}
+
+
 
 //media
 
