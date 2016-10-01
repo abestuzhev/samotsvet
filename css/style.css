@@ -74,7 +74,7 @@ option {
 .l-map-right {
   outline: 1px solid #ccc; }
 
-a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-partners, .userOrder .form-btn, .stone-card_button::after, .popap_button, .popap_button:hover {
+a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-partners, .userOrder .form-btn, .stone-card_button::after, .popap_link--active:hover, .popap_button, .popap_button:hover, .popap_close:hover {
   transition: all .2s ease-out; }
 
 .main::after {
@@ -103,6 +103,11 @@ a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-p
     .l-layout {
       width: 100%;
       padding: 0 10px; } }
+
+.l-grid {
+  font-size: 0; }
+  .l-grid_item {
+    display: inline-block; }
 
 .is-visible {
   display: block !important; }
@@ -339,7 +344,7 @@ a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-p
   width: 30px;
   cursor: pointer; }
 
-.radio label:before {
+.radio label::before {
   content: '';
   display: block;
   height: 26px;
@@ -350,7 +355,7 @@ a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-p
   top: 0px;
   width: 26px; }
 
-.radio label:after {
+.radio label::after {
   -ms-transform: scaleX(-1) rotate(135deg);
   -webkit-transform: scaleX(-1) rotate(135deg);
   transform: scaleX(-1) rotate(135deg);
@@ -486,11 +491,14 @@ a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-p
     font-family: "Noto Sans";
     font-size: 14px;
     font-weight: 700; }
-  .header-top_userAccount {
+  .header-top_user {
     display: inline-block;
-    background: url("../img/user-icon.png") 0 0 no-repeat;
+    position: relative;
     vertical-align: top;
-    margin-top: 17px;
+    margin-top: 15px; }
+  .header-top_userAccount {
+    display: block;
+    background: url("../img/user-icon.png") 0 0 no-repeat;
     width: 17px;
     height: 23px; }
   .header-top_search {
@@ -1795,16 +1803,52 @@ hr {
   font-weight: 400; }
 
 .map-content-canvas {
+  position: relative;
   float: right; }
 
 .popap {
   position: absolute;
   z-index: 999;
-  left: 0;
-  top: 0;
   background-color: #0f5759;
   color: #fff;
-  font-size: 12px; }
+  font-size: 12px;
+  padding: 0 85px;
+  padding-bottom: 25px; }
+  .popap_top {
+    margin-bottom: 45px;
+    padding-top: 10px; }
+    .popap_top::after {
+      content: '';
+      display: inline-block;
+      width: 100%; }
+  .popap_link {
+    color: #FFF;
+    font-family: "Arial";
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 0; }
+    .popap_link--active {
+      background-color: rgba(255, 255, 255, 0.22);
+      border: 1px solid #FFF; }
+      .popap_link--active:hover {
+        background-color: rgba(38, 30, 48, 0.55); }
+  .popap_user {
+    display: inline-block;
+    background: url("../img/user-icon.png") 0 0 no-repeat;
+    width: 17px;
+    height: 23px;
+    margin-top: 5px; }
+    .popap_user--entry {
+      margin-right: 62px; }
+  .popap_login {
+    display: inline-block;
+    padding: 15px 20px; }
+  .popap_reg {
+    display: inline-block;
+    padding: 15px 20px;
+    margin-right: 30px; }
   .popap_button {
     cursor: pointer;
     display: inline-block;
@@ -1816,10 +1860,13 @@ hr {
     padding: 14px 55px;
     background-color: #F6F6F6;
     background-image: linear-gradient(to top, rgba(215, 215, 215, 0.23) 0%, rgba(255, 255, 255, 0.23) 100%);
-    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.19); }
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    margin-bottom: 15px; }
     .popap_button:hover {
       box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.19); }
   .popap_input {
+    vertical-align: top;
     width: 100%;
     display: inline-block;
     background-color: #fff;
@@ -1827,16 +1874,205 @@ hr {
     outline: none;
     font-size: 12px;
     padding: 15px 20px;
-    margin-bottom: 3px; }
+    margin-bottom: 1px;
+    color: #000; }
     .popap_input:last-child {
       margin-bottom: 20px; }
+    .popap_input-text {
+      vertical-align: top;
+      margin: 0;
+      font-size: 12px;
+      padding: 15px 20px;
+      margin-bottom: 1px;
+      color: #000;
+      display: inline-block;
+      background-color: #fff;
+      margin-right: 1px; }
+    .popap_input-captcha {
+      vertical-align: top;
+      margin: 0;
+      height: 43px;
+      font-size: 12px;
+      padding: 5px 20px;
+      margin-bottom: 1px;
+      color: #000;
+      display: inline-block;
+      background-color: #fff;
+      margin-right: 1px; }
+  .popap .captcha-input {
+    vertical-align: top;
+    width: 201px;
+    height: 43px;
+    padding: 15px 20px;
+    color: #000;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 1px; }
+  .popap_body {
+    font-size: 0; }
+    .popap_body-left {
+      text-align: left;
+      width: 50%;
+      float: left; }
+    .popap_body-right {
+      text-align: left;
+      width: 50%;
+      float: right; }
 
 .popap-entry {
-  width: 495px;
-  height: 300px;
-  padding: 0 85px; }
-  .popap-entry_top {
-    margin-bottom: 45px; }
+  right: -147px;
+  top: -15px;
+  width: 495px; }
+  .popap-entry_recovery {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline; }
+    .popap-entry_recovery:hover {
+      text-decoration: none; }
+
+.popap-check {
+  width: auto;
+  display: none; }
+
+.popap-check + label {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #FFF;
+  position: relative;
+  cursor: pointer; }
+
+.popap-check + label::after {
+  -ms-transform: scaleX(-1) rotate(135deg);
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+  -ms-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-right: 4px solid transparent;
+  border-top: 4px solid transparent;
+  content: '';
+  display: block;
+  height: 10px;
+  left: 3px;
+  position: absolute;
+  top: 12px;
+  width: 8px; }
+
+.popap-check:checked + label::after {
+  -webkit-animation: check 0.8s;
+  animation: check 0.8s;
+  border-color: #000; }
+
+.l-popap_body {
+  vertical-align: top;
+  margin-top: 25px; }
+  .l-popap_body::after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.popap_close {
+  position: absolute;
+  top: 10px;
+  right: 47px;
+  background-color: rgba(69, 120, 122, 0.96);
+  border: 1px solid #FFF; }
+  .popap_close:hover {
+    background-color: rgba(38, 30, 48, 0.55); }
+  .popap_close-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 14px;
+    background: url("../img/close-icon.png") 50% 50% no-repeat; }
+
+.l-popap_button {
+  width: 160px;
+  float: right;
+  margin-top: 15px; }
+
+.popap-registration {
+  width: 1024px;
+  left: -518px;
+  top: 0;
+  opacity: .8; }
+  .popap-registration .popap_login {
+    margin-right: 90px; }
+
+.map-modal {
+  padding: 20px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -210px;
+  width: 600px;
+  height: 440px;
+  background-color: #FEFDFD;
+  border: 2px solid #10a7b9;
+  box-shadow: 1.2px 1.6px 8px rgba(0, 0, 0, 0.8); }
+  .map-modal::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .map-modal_left {
+    float: left;
+    width: 100px; }
+  .map-modal_right {
+    width: 70%;
+    float: right; }
+  .map-modal_point {
+    height: 42px;
+    background: url("../img/map-point.png") 50% 0 no-repeat;
+    margin-bottom: 30px; }
+  .map-modal_img {
+    margin-bottom: 20px; }
+  .map-modal_title {
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 700;
+    color: #0F0F0C;
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  .map-modal_adress {
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 700;
+    color: #0F0F0C;
+    margin-bottom: 25px; }
+  .map-modal_item {
+    margin-bottom: 20px; }
+  .map-modal-icon {
+    color: #15736F;
+    text-align: center;
+    vertical-align: middle;
+    width: 60px;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    margin-right: 30px;
+    height: 100%; }
+  .map-modal-text {
+    margin-left: 100px;
+    display: block;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 700;
+    color: #000; }
+    .map-modal-text p {
+      margin: 0;
+      line-height: 22px;
+      margin-bottom: 3px; }
+  .map-modal_close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    background: url("../img/map-modal-close.png") 0 0 no-repeat; }
 
 @media all and (max-width: 935px) {
   .delivery .delivery-list {

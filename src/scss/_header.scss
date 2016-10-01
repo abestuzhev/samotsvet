@@ -35,11 +35,17 @@
       font-weight: 700;
     }
 
-    &_userAccount {
+    &_user {
       display: inline-block;
-      background: url($img-dir + 'user-icon.png') 0 0 no-repeat;
+      position: relative;
       vertical-align: top;
-      margin-top: 17px;
+      margin-top: 15px;
+
+    }
+
+    &_userAccount {
+      display: block;
+      background: url($img-dir + 'user-icon.png') 0 0 no-repeat;
       width: 17px;
       height: 23px;
     }

@@ -1141,20 +1141,74 @@ hr {
   }
 
   &-canvas {
+    position: relative;
     float: right;
   }
 }
 
-//poap
+//popap
 
 .popap {
+  // display: none;
   position: absolute;
   z-index: 999;
-  left: 0;
-  top: 0;
   background-color: #0f5759;
   color: #fff;
   font-size: 12px;
+  padding: 0 85px;
+  padding-bottom: 25px;
+  // opacity: .8;
+
+  &_top {
+    @include full-width;
+    margin-bottom: 45px;
+    padding-top: 10px;
+  }
+
+  &_link {
+    color: #FFF;
+    font-family: "Arial";
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 0;
+
+    &--active {
+      background-color: rgba(255, 255, 255, 0.22);
+      border: 1px solid #FFF;
+
+      &:hover {
+        background-color: rgba(38, 30, 48, 0.55);
+        @extend %transition;
+      }
+    }
+  }//_link
+
+  &_user {
+    display: inline-block;
+    background: url($img-dir + 'user-icon.png') 0 0 no-repeat;
+    width: 17px;
+    height: 23px;
+    margin-top: 5px;
+
+    &--entry {
+      margin-right: 62px;
+    }
+  }
+
+
+  &_login {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  &_reg {
+    display: inline-block;
+    padding: 15px 20px;
+    margin-right: 30px;
+
+  }
 
   &_button {
     cursor: pointer;
@@ -1169,15 +1223,17 @@ hr {
     background-image: linear-gradient(to top, rgba(215, 215, 215, 0.23) 0%, rgba(255, 255, 255, 0.23) 100%);
     box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.19);
     @extend %transition;
+    width: 100%;
+    margin-bottom: 15px;
 
     &:hover {
       box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.19);
       @extend %transition;
     }
-
-  }
+  }//_button
 
   &_input {
+    vertical-align: top;
     width: 100%;
     display: inline-block;
     background-color: #fff;
@@ -1185,25 +1241,270 @@ hr {
     outline: none;
     font-size: 12px;
     padding: 15px 20px;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
+    color: #000;
 
     &:last-child {
       margin-bottom: 20px;
     }
+
+    &-text {
+      vertical-align: top;
+      margin: 0;
+      font-size: 12px;
+      padding: 15px 20px;
+      margin-bottom: 1px;
+      color: #000;
+      display: inline-block;
+      background-color: #fff;
+      margin-right: 1px;
+    }
+
+    &-captcha {
+      vertical-align: top;
+      margin: 0;
+      height: 43px;
+      font-size: 12px;
+      padding: 5px 20px;
+      margin-bottom: 1px;
+      color: #000;
+      display: inline-block;
+      background-color: #fff;
+      margin-right: 1px;
+    }
   }
+  .captcha-input {
+    vertical-align: top;
+    width: 201px;
+    height: 43px;
+    padding: 15px 20px;
+    color: #000;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 1px;
+  }
+
+  &_body {
+    font-size: 0;
+
+    &-left {
+      text-align: left;
+      width: 50%;
+      float: left;
+    }//-left
+
+    &-right   {
+      text-align: left;
+      width: 50%;
+      float: right;
+    }//-right
+  }//_body
 }
 
 .popap-entry {
+  right: -147px;
+  top: -15px;
   width: 495px;
-  height: 300px;
-  padding: 0 85px;
 
-  &_top {
-    margin-bottom: 45px;
+
+
+  &_recovery {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }//_recovery
+}//popap-entry
+
+
+
+.popap-check {
+  width: auto;
+  display: none;
+}
+
+.popap-check + label {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #FFF;
+  position: relative;
+  cursor: pointer;
+}
+.popap-check + label::after {
+  -moz-transform: scaleX(-1) rotate(135deg);
+  -ms-transform: scaleX(-1) rotate(135deg);
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-right: 4px solid transparent;
+  border-top: 4px solid transparent;
+  content: '';
+  display: block;
+  height: 10px;
+  left: 3px;
+  position: absolute;
+  top: 12px;
+  width: 8px;
+}
+
+.popap-check:checked + label::after {
+  -moz-animation: check 0.8s;
+  -webkit-animation: check 0.8s;
+  animation: check 0.8s;
+  border-color: #000;
+}
+
+.l-popap_body {
+  vertical-align: top;
+  @include clear;
+  margin-top: 25px;
+}
+
+//popap_close
+.popap_close {
+  position: absolute;
+  // width: 40px;
+  // height: 40px;
+  top: 10px;
+  right: 47px;
+  background-color: rgba(69, 120, 122, 0.96);
+  border: 1px solid #FFF;
+
+  &:hover {
+    background-color: rgba(38, 30, 48, 0.55);
+    @extend %transition;
+  }
+
+  &-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 14px;
+    background: url($img-dir + 'close-icon.png') 50% 50% no-repeat;
   }
 }
 
+.l-popap_button {
+  width: 160px;
+  float: right;
+  margin-top: 15px;
+}
 
+//popap-registration
+.popap-registration {
+  width: 1024px;
+  left: -518px;
+  top: 0;
+  opacity: .8;
+
+  .popap_login {
+    margin-right: 90px;
+  }
+}
+
+.map-modal {
+  // display: none;
+  padding: 20px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -210px;
+  width: 600px;
+  height: 440px;
+  background-color: #FEFDFD;
+  border: 2px solid #10a7b9;
+  box-shadow: 1.2px 1.6px 8px rgba(0, 0, 0, 0.8);
+  @include clear;
+
+  &_left {
+    float: left;
+    width: 100px;
+    // margin-right: 45px;
+  }
+
+  &_right {
+    // margin-left: 150px;
+    width: 70%;
+    float: right;
+  }
+
+  &_point {
+    height: 42px;
+    background: url($img-dir + 'map-point.png') 50% 0 no-repeat;
+    margin-bottom: 30px;
+  }
+
+  &_img {
+    margin-bottom: 20px;
+  }
+
+  &_title {
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 700;
+    color: #0F0F0C;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  &_adress {
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 700;
+    color: #0F0F0C;
+    margin-bottom: 25px;
+  }
+
+  &_item {
+    margin-bottom: 20px;
+  }
+
+  &-icon {
+    color: #15736F;
+    text-align: center;
+    vertical-align: middle;
+    width: 60px;
+    font-size: 14px;
+    font-weight: 700;
+    // display: inline-block;
+    float: left;
+    margin-right: 30px;
+    height: 100%;
+  }
+
+  &-text {
+    margin-left: 100px;
+    display: block;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    p {
+      margin: 0;
+      line-height: 22px;
+      margin-bottom: 3px;
+    }
+  }
+
+  &_close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    background: url($img-dir + 'map-modal-close.png') 0 0 no-repeat;
+  }
+}
 
 //media
 

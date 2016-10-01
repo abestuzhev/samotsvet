@@ -287,7 +287,7 @@
   width: 30px;
   cursor: pointer;
 }
-.radio label:before {
+.radio label::before {
   content: '';
   display: block;
   height: 26px;
@@ -298,7 +298,7 @@
   top: 0px;
   width: 26px;
 }
-.radio label:after {
+.radio label::after {
   -moz-transform: scaleX(-1) rotate(135deg);
   -ms-transform: scaleX(-1) rotate(135deg);
   -webkit-transform: scaleX(-1) rotate(135deg);

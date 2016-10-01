@@ -112,6 +112,13 @@ option {
   }
 }
 
+.l-grid {
+  font-size: 0;
+  &_item {
+    display: inline-block;
+  }
+}
+
 .is-visible {
   display: block !important;
 }

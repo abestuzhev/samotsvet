@@ -22,6 +22,33 @@ $(document).ready(function(){
       $('.js-form-message').text('');
     }
   });
+///
+///
+
+
+  //
+  $('.map-modal_close').on('click', function(e){
+    e.preventDefault();
+    $('.map-modal').toggleClass('is-visible');
+  });
+  //
+
+  $('.header-top_userAccount').on('click', function(e){
+    e.preventDefault();
+    $('.popap-entry').addClass('is-visible');
+  });
+
+  $('.popap_user').on('click', function(e){
+    e.preventDefault();
+    $('.popap-entry').removeClass('is-visible');
+  });
+
+  $('.popap_close').on('click', function(e){
+    e.preventDefault();
+    $('.popap-entry').toggleClass('is-visible');
+  });
+
+
 
   $('.productCard-more a').on('click', function(e){
     e.preventDefault();
@@ -113,10 +140,10 @@ $(document).ready(function(){
 
  });
 
- $('.header-top_userAccount').on('clock', function(e){
-   e.preventDefault();
-
- });
+ // $('.header-top_userAccount').on('clock', function(e){
+ //   e.preventDefault();
+ //
+ // });
 });
 //
 //
