@@ -70,11 +70,7 @@ select {
 option {
   background-color: #2a2531; }
 
-.l-map-left,
-.l-map-right {
-  outline: 1px solid #ccc; }
-
-a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-partners, .userOrder .form-btn, .stone-card_button::after, .popap_link--active:hover, .popap_button, .popap_button:hover, .popap_close:hover {
+a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-partners, .userOrder .form-btn, .stone-card_button::after, .map-title_partners:hover .map-title_partners-hover, .map-title_partners-hover, .popap_link--active:hover, .popap_button, .popap_button:hover, .popap_close:hover {
   transition: all .2s ease-out; }
 
 .main::after {
@@ -1720,7 +1716,42 @@ hr {
       font-weight: 400; }
 
 .map-title {
-  margin-bottom: 30px; }
+  position: relative;
+  margin-bottom: 30px;
+  position: relative; }
+  .map-title h3 {
+    display: inline-block;
+    margin-right: 100px; }
+  .map-title_partners {
+    position: absolute;
+    z-index: 1;
+    top: -16px;
+    width: 80px;
+    height: 60px;
+    box-sizing: border-box;
+    background: url("../img//partnert-icon.png") 0 50% no-repeat; }
+    .map-title_partners:hover .map-title_partners-hover {
+      z-index: 10;
+      display: block; }
+  .map-title_partners-hover {
+    display: none;
+    width: 350px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 164px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 0;
+    margin-left: -34px;
+    top: -22px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    background: url("../img//partners-green.png") 0 0 no-repeat; }
+    @media all and (max-width: 580px) {
+      .map-title_partners-hover {
+        display: none; } }
 
 .l-map {
   margin-bottom: 100px; }
@@ -1735,7 +1766,8 @@ hr {
   width: 50%; }
 
 .l-map-left {
-  float: left; }
+  float: left;
+  font-size: 0; }
 
 .l-map-right {
   float: right;
@@ -1814,6 +1846,10 @@ hr {
   font-size: 12px;
   padding: 0 85px;
   padding-bottom: 25px; }
+  .popap::after {
+    content: '';
+    display: block;
+    clear: both; }
   .popap_top {
     margin-bottom: 45px;
     padding-top: 10px; }
@@ -1901,28 +1937,42 @@ hr {
       margin-right: 1px; }
   .popap .captcha-input {
     vertical-align: top;
-    width: 201px;
+    width: 163px;
     height: 43px;
     padding: 15px 20px;
     color: #000;
     display: inline-block;
-    background-color: #fff;
-    margin-right: 1px; }
+    background-color: #fff; }
   .popap_body {
     font-size: 0; }
     .popap_body-left {
       text-align: left;
       width: 50%;
+      padding-right: 40px;
       float: left; }
     .popap_body-right {
       text-align: left;
       width: 50%;
+      padding-left: 40px;
       float: right; }
+  .popap-video {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 25px;
+    background-color: #ccc; }
+    .popap-video iframe {
+      max-width: 100%; }
+  .popap-text {
+    font-size: 14px;
+    color: #FFF;
+    font-family: "Tahoma";
+    line-height: 18px; }
 
 .popap-entry {
   right: -147px;
   top: -15px;
-  width: 495px; }
+  width: 495px;
+  display: none; }
   .popap-entry_recovery {
     color: #FFF;
     font-size: 12px;
@@ -1968,10 +2018,6 @@ hr {
 .l-popap_body {
   vertical-align: top;
   margin-top: 25px; }
-  .l-popap_body::after {
-    content: '';
-    display: block;
-    clear: both; }
 
 .popap_close {
   position: absolute;
@@ -1994,10 +2040,10 @@ hr {
   margin-top: 15px; }
 
 .popap-registration {
+  display: none;
   width: 1024px;
-  left: -518px;
-  top: 0;
-  opacity: .8; }
+  left: -499px;
+  top: -15px; }
   .popap-registration .popap_login {
     margin-right: 90px; }
 
@@ -2088,3 +2134,90 @@ hr {
   .payment .payment-list-item {
     margin: 0 10px;
     margin-bottom: 60px; } }
+
+@media all and (max-width: 1100px) {
+  .popap-entry {
+    width: 190px;
+    padding: 0 1px;
+    left: -161px;
+    top: -5px; }
+    .popap-entry .popap_user--entry {
+      position: absolute;
+      right: 12px;
+      top: 5px;
+      margin: 0; }
+    .popap-entry .popap-check {
+      display: none; }
+    .popap-entry .popap_body-left {
+      display: none; }
+    .popap-entry .popap_body-right {
+      width: auto;
+      padding: 0;
+      float: none;
+      text-align: center;
+      padding-bottom: 15px; }
+  .popap-registration {
+    width: 190px;
+    padding: 0 1px;
+    left: -161px;
+    top: -5px; }
+    .popap-registration .l-popap_body {
+      margin: 0; }
+    .popap-registration .popap_body-left {
+      padding: 0; }
+    .popap-registration .popap_body-right {
+      display: none; }
+    .popap-registration .popap_body-left {
+      width: auto; }
+    .popap-registration .captcha-input {
+      width: 80px; }
+    .popap-registration .popap_input-captcha {
+      display: none; }
+    .popap-registration .l-popap_button {
+      width: auto;
+      text-align: center;
+      float: none;
+      margin: 0;
+      margin-top: 15px; }
+      .popap-registration .l-popap_button p {
+        text-align: left;
+        padding-left: 10px; }
+  .popap_button {
+    width: 155px; }
+  .popap_top {
+    margin-bottom: 10px;
+    padding: 0 10px; }
+  .popap_close {
+    display: none; }
+  .popap_reg {
+    margin: 0; } }
+
+.map-info {
+  margin-bottom: 35px; }
+  .map-info::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .map-info_quantity {
+    color: #261E30;
+    font-family: "Noto Sans";
+    font-size: 48px;
+    line-height: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 40px; }
+  .map-info_text {
+    float: left; }
+    .map-info_text p {
+      color: #261E30;
+      font-family: "Noto Sans";
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 5px; }
+
+.map-region {
+  height: 500px;
+  background: url("../img//map-all.png") 50% 50% no-repeat;
+  background-size: cover; }

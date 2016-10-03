@@ -5,25 +5,25 @@
   height: 64px;
 }
 
-.header {
+    .header {
 
-  &-mobile-logo {
-    display: none;
+      &-mobile-logo {
+        display: none;
 
-    @media all and (max-width: 800px) {
-      display: block;
-      text-align: center;
-    }
+        @media all and (max-width: 800px) {
+          display: block;
+          text-align: center;
+        }
 
-  }
+      }
 
-  &-top {
-    background-color: $dark-color;
-    width: 100%;
+      &-top {
+        background-color: $dark-color;
+        width: 100%;
 
-    &_logo {
-      display: inline-block;
-    }
+        &_logo {
+          display: inline-block;
+        }
 
     &_phoneNumber {
       display: inline-block;

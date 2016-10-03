@@ -40,13 +40,34 @@ $(document).ready(function(){
 
   $('.popap_user').on('click', function(e){
     e.preventDefault();
-    $('.popap-entry').removeClass('is-visible');
+    $('.popap-entry').addClass('is-visible');
   });
 
-  $('.popap_close').on('click', function(e){
+  $('.popap_user').on('click', function(e){
     e.preventDefault();
-    $('.popap-entry').toggleClass('is-visible');
+    $('.popap-entry').removeClass('is-visible');
+    $('.popap-registration').removeClass('is-visible');
   });
+
+    //registration
+  $('.popap_reg').on('click', function(e){
+    e.preventDefault();
+    $('.popap-entry').removeClass('is-visible');
+    $('.popap-registration').addClass('is-visible');
+  });
+
+  $('.popap_login').on('click', function(e){
+    e.preventDefault();
+    $('.popap-registration').removeClass('is-visible');
+    $('.popap-entry').addClass('is-visible');
+  });
+
+    $('.popap_close').on('click', function(e){
+        e.preventDefault();
+        $('.popap-entry').removeClass('is-visible');
+        $('.popap-registration').removeClass('is-visible');
+    });
+
 
 
 
