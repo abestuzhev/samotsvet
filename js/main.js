@@ -24,7 +24,14 @@ $(document).ready(function(){
   });
 ///
 ///
-
+    $(".map-title_partners").hover(
+        function () {
+            $('.map-title_partners-hover').addClass("hover");
+        },
+        function () {
+            $('.map-title_partners-hover').removeClass("hover");
+        }
+    );
 
   //
   $('.map-modal_close').on('click', function(e){
