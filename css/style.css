@@ -1724,7 +1724,7 @@ hr {
     margin-right: 100px; }
   .map-title_partners {
     position: absolute;
-    z-index: 999;
+    z-index: 5;
     top: -16px;
     width: 350px;
     height: 65px;
