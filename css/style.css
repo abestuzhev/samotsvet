@@ -1834,6 +1834,8 @@ hr {
   font-weight: 400; }
 
 .map-content-canvas {
+  width: 680px;
+  height: 520px;
   position: relative;
   float: right; }
 
@@ -2046,78 +2048,88 @@ hr {
   .popap-registration .popap_login {
     margin-right: 90px; }
 
-.map-modal {
-  padding: 20px 40px;
+#close-balloon {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -300px;
-  margin-top: -210px;
-  width: 600px;
-  height: 440px;
-  background-color: #FEFDFD;
-  border: 2px solid #10a7b9;
-  box-shadow: 1.2px 1.6px 8px rgba(0, 0, 0, 0.8); }
-  .map-modal::after {
-    content: '';
-    display: block;
-    clear: both; }
-  .map-modal_left {
-    float: left;
-    width: 100px; }
-  .map-modal_right {
-    width: 70%;
-    float: right; }
-  .map-modal_point {
-    height: 42px;
-    background: url("../img/map-point.png") 50% 0 no-repeat;
-    margin-bottom: 30px; }
-  .map-modal_img {
-    margin-bottom: 20px; }
-  .map-modal_title {
-    font-family: "Noto Sans";
-    font-size: 14px;
-    font-weight: 700;
-    color: #0F0F0C;
-    text-transform: uppercase;
-    margin-bottom: 5px; }
-  .map-modal_adress {
-    font-family: "Noto Sans";
-    font-size: 14px;
-    font-weight: 700;
-    color: #0F0F0C;
-    margin-bottom: 25px; }
-  .map-modal_item {
-    margin-bottom: 20px; }
-  .map-modal-icon {
-    color: #15736F;
-    text-align: center;
-    vertical-align: middle;
-    width: 60px;
-    font-size: 14px;
-    font-weight: 700;
-    float: left;
-    margin-right: 30px;
-    height: 100%; }
-  .map-modal-text {
-    margin-left: 100px;
-    display: block;
-    font-family: "Noto Sans";
-    font-size: 14px;
-    font-weight: 700;
-    color: #000; }
-    .map-modal-text p {
-      margin: 0;
-      line-height: 22px;
-      margin-bottom: 3px; }
-  .map-modal_close {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 14px;
-    height: 14px;
-    display: block;
-    background: url("../img/map-modal-close.png") 0 0 no-repeat; }
+  top: 20px;
+  right: 5px;
+  cursor: pointer; }
+
+.one {
+  width: 300px;
+  background-color: #ccc; }
+
+.map-modal_left {
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  float: left;
+  width: 100px; }
+
+.map-modal_right {
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  text-align: left;
+  width: 70%;
+  float: right; }
+
+.map-modal_point {
+  height: 42px;
+  background: url("../img/map-point.png") 50% 0 no-repeat;
+  margin-bottom: 30px; }
+
+.map-modal_img {
+  margin-bottom: 20px; }
+
+.map-modal_title {
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-weight: 700;
+  color: #0F0F0C;
+  text-transform: uppercase;
+  margin-bottom: 5px; }
+
+.map-modal_adress {
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-weight: 700;
+  color: #0F0F0C;
+  margin-bottom: 25px; }
+
+.map-modal_item {
+  margin-bottom: 20px; }
+
+.map-modal-icon {
+  color: #15736F;
+  text-align: center;
+  vertical-align: middle;
+  width: 60px;
+  font-size: 14px;
+  font-weight: 700;
+  float: left;
+  margin-right: 30px;
+  height: 100%; }
+
+.map-modal-text {
+  margin-left: 100px;
+  display: block;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-weight: 700;
+  color: #000; }
+  .map-modal-text p {
+    margin: 0;
+    line-height: 22px;
+    margin-bottom: 3px; }
+
+.map-modal_close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 14px;
+  height: 14px;
+  display: block;
+  background: url("../img/map-modal-close.png") 0 0 no-repeat; }
 
 @media all and (max-width: 935px) {
   .delivery .delivery-list {

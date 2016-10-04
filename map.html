@@ -13,6 +13,153 @@
   <link rel="stylesheet" href="css/style.css">
   <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css"><![endif]-->
 
+  <!-- Подключаем API  карт 2.x  -->
+  <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    // Как только будет загружен API и готов DOM, выполняем инициализацию
+    ymaps.ready(init);
+    var myMap;
+    function init () {
+      // Создание экземпляра карты и его привязка к контейнеру с
+      // заданным id ("map")
+      myMap = new ymaps.Map('map', {
+        // При инициализации карты, обязательно нужно указать
+        // ее центр и коэффициент масштабирования
+        center: [56.317222,44.002149],
+        zoom: 13
+      });
+
+
+      myMap.geoObjects.events.add([
+        'balloonopen'
+      ], function (e) {
+        var geoObject = e.get('target');
+        myMap.panTo(geoObject.geometry.getCoordinates(), {
+          delay: 0
+        });
+      });
+
+      myPlacemark1 = new ymaps.Placemark([56.315695,44.017063], {
+        name: 'САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»',
+        address: 'ул. Большая Советская,24',
+        number: '8-900-222-76-67',
+        weekdays: 'пн-пт с 9.00 до 19.00 ',
+        weekend: 'сб-вск с 10.00 до 20.00',
+        pay: 'наличные, карта',
+        way: 'маршрутка или автобус 125 до  остановки "Остановка" слева 4-х   этжное здание с нашей вывеской'
+
+      }, {
+        // Изображение иконки метки
+        iconImageHref: 'img/map-poin-white.png',
+        // Размеры изображения иконки
+        iconImageSize: [43, 45],
+        // смещение картинки
+        iconImageOffset: [-16, -37],
+        // Размеры содержимого балуна
+        balloonContentSize: [595, 434],
+        // Задаем макет балуна - пользовательская картинка с контентом
+        balloonLayout: "default#imageWithContent",
+        // Картинка балуна
+        balloonImageHref: 'img/baloon-img.png',
+        // Смещение картинки балуна
+        balloonImageOffset: [-307, -227],
+        // Размеры картинки балуна
+        balloonImageSize: [615, 454],
+        // Балун не имеет тени
+        balloonShadow: false,
+        //Выравнивание по умолчанию
+        balloonAutoPan: false
+      }),
+
+      myPlacemark2 = new ymaps.Placemark([56.324117,44.00136], {
+        name: 'САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»',
+        address: 'ул. Большая Советская,24',
+        number: '8-900-222-76-67',
+        weekdays: 'пн-пт с 9.00 до 19.00 ',
+        weekend: 'сб-вск с 10.00 до 20.00',
+        pay: 'наличные, карта',
+        way: 'маршрутка или автобус 125 до  остановки "Остановка" слева 4-х   этжное здание с нашей вывеской'
+
+      }, {
+        iconImageHref: 'img/map-poin-white.png',
+        iconImageSize: [43, 45],
+        iconImageOffset: [-16, -37],
+        balloonContentSize: [595, 434],
+        balloonLayout: "default#imageWithContent",
+        balloonImageHref: 'img/baloon-img.png',
+        balloonImageOffset: [-307, -227],
+        balloonImageSize: [615, 454],
+        balloonShadow: false,
+        balloonAutoPan: false
+      }),
+
+      myPlacemark3 = new ymaps.Placemark([56.320203,44.002321], {
+        name: 'САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»',
+        address: 'ул. Большая Советская,24',
+        number: '8-900-222-76-67',
+        weekdays: 'пн-пт с 9.00 до 19.00 ',
+        weekend: 'сб-вск с 10.00 до 20.00',
+        pay: 'наличные, карта',
+        way: 'маршрутка или автобус 125 до  остановки "Остановка" слева 4-х   этжное здание с нашей вывеской'
+
+      }, {
+        iconImageHref: 'img/map-poin-white.png',
+        iconImageSize: [43, 45],
+        iconImageOffset: [-16, -37],
+        balloonContentSize: [595, 434],
+        balloonLayout: "default#imageWithContent",
+        balloonImageHref: 'img/baloon-img.png',
+        balloonImageOffset: [-307, -227],
+        balloonImageSize: [615, 454],
+        balloonShadow: false,
+        balloonAutoPan: false
+      }),
+
+      // Создаем коллекцию, в которую будем добавлять метки
+      myCollection = new ymaps.GeoObjectCollection();
+
+      //Добавляем метки в коллекцию геообъектов.
+      myCollection
+              .add(myPlacemark1)
+              .add(myPlacemark2)
+              .add(myPlacemark3);
+
+      // Создаем шаблон для отображения контента балуна
+      var myBalloonLayout = ymaps.templateLayoutFactory.createClass(
+        '<div class="map-modal_left"><div class="map-modal_point"></div><div class="map-modal_img"><img src="img/modal-img-1.jpg" alt=""></div><div class="map-modal_img"><img src="img/modal-img-1.jpg" alt=""></div></div>' +
+        '<div class="map-modal_right"><div class="map-modal_title">$[properties.name]</div><div class="map-modal_adress">$[properties.address]</div><div class="map-modal_contact"><div class="map-modal_item"><div class="map-modal-icon"><img src="img/modal-phone-icon.png" alt=""></div><div class="map-modal-text">$[properties.number]</div> <!--end item--></div><div class="map-modal_item"><div class="map-modal-icon"><img src="img/modal-clock-icon.png" alt=""></div><div class="map-modal-text"><p>$[properties.weekdays]</p><p>$[properties.weekend]</p></div> <!--end item--></div><div class="map-modal_item"><div class="map-modal-icon">оплата:</div><div class="map-modal-text">$[properties.pay]</div> <!--end item--></div><div class="map-modal_item"><div class="map-modal-icon">как пройти:</div><div class="map-modal-text"><p>$[properties.way]</p></div> <!--end item--></div>  </div>  </div>' +
+        '<img id="close-balloon" src="img/map-modal-close.png" onclick="myMap.balloon.close()">'
+
+      );
+////
+//      $('#close-balloon').on('click', function(){
+//        myPlacemarkOpera.balloon.close()
+//      });
+
+
+
+      // Помещаем созданный шаблон в хранилище шаблонов. Теперь наш шаблон доступен по ключу 'my#theaterlayout'.
+      ymaps.layout.storage.add('my#theaterlayout', myBalloonLayout);
+
+      // Задаем наш шаблон для балунов геобъектов коллекции.
+      myCollection.options.set({
+        balloonContentBodyLayout:'my#theaterlayout',
+        // Максимальная ширина балуна в пикселах
+        balloonMaxWidth: 600
+      });
+
+      // Добавляем коллекцию геообъектов на карту.
+      myMap.geoObjects.add(myCollection);
+
+
+
+
+    }
+  </script>
+</head>
+
+  <!--end card-->
 </head>
 <body>
 
@@ -285,43 +432,47 @@
           <div class="map-content_text">adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quae</div>
         </div>
         <div class="map-content-canvas">
-          <img src="img/map-canvas.jpg" alt="">
+          <!--<img src="img/map-canvas.jpg" alt="">-->
+          <div id="map" style="width:680px; height:520px"></div>
 
-          <div class="map-modal">
-            <div class="map-modal_left">
-              <div class="map-modal_point"></div>
-              <div class="map-modal_img"><img src="img/modal-img-1.jpg" alt=""></div>
-              <div class="map-modal_img"><img src="img/modal-img-1.jpg" alt=""></div>
-            </div>
-            <div class="map-modal_right">
-              <div class="map-modal_title">Салон «Чарующие самоцветы»</div>
-              <div class="map-modal_adress">ул. Большая Советская,24</div>
-              <div class="map-modal_contact">
-                <div class="map-modal_item">
-                  <div class="map-modal-icon"><img src="img/modal-phone-icon.png" alt=""></div>
-                  <div class="map-modal-text">8-900-222-76-67</div>
-                </div>
-                <div class="map-modal_item">
-                  <div class="map-modal-icon"><img src="img/modal-clock-icon.png" alt=""></div>
-                  <div class="map-modal-text">
-                    <p>пн-пт с 9.00 до 19.00</p>
-                    <p>пн-пт с 9.00 до 19.00</p>
-                  </div>
-                </div>
-                <div class="map-modal_item">
-                  <div class="map-modal-icon">оплата:</div>
-                  <div class="map-modal-text">наличные, карта</div>
-                </div>
-                <div class="map-modal_item">
-                  <div class="map-modal-icon">как пройти:</div>
-                  <div class="map-modal-text">
-                    <p>маршрутка или автобус 125 до остановки "Остановка" слева 4-х этжное здание с нашей вывеской</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="map-modal_close"></a>
-          </div>
+          <!--map-modal-->
+          <!--<div class="map-modal">-->
+            <!--<div class="map-modal_left">-->
+              <!--<div class="map-modal_point"></div>-->
+              <!--<div class="map-modal_img"><img src="img/modal-img-1.jpg" alt=""></div>-->
+              <!--<div class="map-modal_img"><img src="img/modal-img-1.jpg" alt=""></div>-->
+            <!--</div>-->
+            <!--<div class="map-modal_right">-->
+              <!--<div class="map-modal_title">Салон «Чарующие самоцветы»</div>-->
+              <!--<div class="map-modal_adress">ул. Большая Советская,24</div>-->
+              <!--<div class="map-modal_contact">-->
+                <!--<div class="map-modal_item">-->
+                  <!--<div class="map-modal-icon"><img src="img/modal-phone-icon.png" alt=""></div>-->
+                  <!--<div class="map-modal-text">8-900-222-76-67</div>-->
+                <!--</div>-->
+                <!--<div class="map-modal_item">-->
+                  <!--<div class="map-modal-icon"><img src="img/modal-clock-icon.png" alt=""></div>-->
+                  <!--<div class="map-modal-text">-->
+                    <!--<p>пн-пт с 9.00 до 19.00</p>-->
+                    <!--<p>пн-пт с 9.00 до 19.00</p>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="map-modal_item">-->
+                  <!--<div class="map-modal-icon">оплата:</div>-->
+                  <!--<div class="map-modal-text">наличные, карта</div>-->
+                <!--</div>-->
+                <!--<div class="map-modal_item">-->
+                  <!--<div class="map-modal-icon">как пройти:</div>-->
+                  <!--<div class="map-modal-text">-->
+                    <!--<p>маршрутка или автобус 125 до остановки "Остановка" слева 4-х этжное здание с нашей вывеской</p>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<a href="#" class="map-modal_close"></a>-->
+          <!--</div>-->
+          <!--map-modal-->
+
         </div>
       </div>
     </div>

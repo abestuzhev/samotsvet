@@ -1194,6 +1194,8 @@ hr {
   }
 
   &-canvas {
+    width: 680px;
+    height: 520px;
     position: relative;
     float: right;
   }
@@ -1483,45 +1485,75 @@ hr {
 
 
 }
-
-.map-modal {
-  // display: none;
-  padding: 20px 40px;
+#close-balloon {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -300px;
-  margin-top: -210px;
-  width: 600px;
-  height: 440px;
-  background-color: #FEFDFD;
-  border: 2px solid #10a7b9;
-  box-shadow: 1.2px 1.6px 8px rgba(0, 0, 0, 0.8);
-  @include clear;
+  top: 20px;
+  right: 5px;
+  cursor: pointer;
+}
 
-  &_left {
+.one {
+  width: 300px;
+  background-color: #ccc;
+}
+
+//.map-modal {
+//  display: none;
+//  padding: 20px 40px;
+//  position: relative;
+//  width: 600px;
+//  height: 440px;
+//  background-color: #FEFDFD;
+//  @include clear;
+//}
+// '<img class="close-balloon" src="img/map-modal-close.png" onclick="myMap.balloon.close()">'
+
+
+//.map-modal {
+   //display: none;
+  //padding: 20px 40px;
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //margin-left: -300px;
+  //margin-top: -210px;
+  //width: 600px;
+  //height: 440px;
+  //background-color: #FEFDFD;
+  //border: 2px solid #10a7b9;
+  //box-shadow: 1.2px 1.6px 8px rgba(0, 0, 0, 0.8);
+  //@include clear;
+
+  .map-modal_left {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 40px;
     float: left;
     width: 100px;
     // margin-right: 45px;
   }
 
-  &_right {
+  .map-modal_right {
     // margin-left: 150px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    text-align: left;
     width: 70%;
     float: right;
   }
 
-  &_point {
+  .map-modal_point {
     height: 42px;
     background: url($img-dir + 'map-point.png') 50% 0 no-repeat;
     margin-bottom: 30px;
   }
 
-  &_img {
+  .map-modal_img {
     margin-bottom: 20px;
   }
 
-  &_title {
+  .map-modal_title {
     font-family: "Noto Sans";
     font-size: 14px;
     font-weight: 700;
@@ -1530,7 +1562,7 @@ hr {
     margin-bottom: 5px;
   }
 
-  &_adress {
+  .map-modal_adress {
     font-family: "Noto Sans";
     font-size: 14px;
     font-weight: 700;
@@ -1538,11 +1570,11 @@ hr {
     margin-bottom: 25px;
   }
 
-  &_item {
+  .map-modal_item {
     margin-bottom: 20px;
   }
 
-  &-icon {
+  .map-modal-icon {
     color: #15736F;
     text-align: center;
     vertical-align: middle;
@@ -1555,7 +1587,7 @@ hr {
     height: 100%;
   }
 
-  &-text {
+  .map-modal-text {
     margin-left: 100px;
     display: block;
     font-family: "Noto Sans";
@@ -1569,7 +1601,7 @@ hr {
     }
   }
 
-  &_close {
+  .map-modal_close {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -1578,7 +1610,7 @@ hr {
     display: block;
     background: url($img-dir + 'map-modal-close.png') 0 0 no-repeat;
   }
-}
+//}
 
 //media
 
