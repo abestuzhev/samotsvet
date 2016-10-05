@@ -424,3 +424,85 @@
   transition: all 0.2s 0.1s ease;
   opacity: 0;
 }
+
+
+//city-card
+.city-card {
+  width: 100%;
+  margin-right: 230px;
+  background-color: #FEFDFD;
+  border: 2px solid #10a7b8;
+  box-shadow: 1.2px 1.6px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+
+  &_title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 28px;
+    margin-bottom: 20px;
+  }
+
+  &_item {
+    padding-left: 28px;
+    position: relative;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  &_adress {
+    font-weight: bold;
+
+    &::after {
+      content: '';
+      background: url($img-dir + 'map-point.png') 0 0 no-repeat;
+      background-size: 22px;
+    }
+  }//_adress
+
+  &_phone-number {
+
+    &::after {
+      content: '';
+      background: url($img-dir + 'modal-phone-icon.png') 0 0 no-repeat;
+    }
+  }//_phone-number
+
+  &_time-work {
+
+    &::after {
+      content: '';
+      background-size: 22px;
+      background: url($img-dir + 'modal-clock-icon.png') 0 0 no-repeat;
+    }
+  }//_time-work
+
+  &_pay {
+
+    &::after {
+      content: '';
+      background: url($img-dir + 'modal-pay-icon.png') 0 0 no-repeat;
+      background-size: 19px;
+    }
+  }//_pay
+
+  &_passage {
+
+    &::after {
+      content: '';
+      background: url($img-dir + 'modal-passage-icon.png') 0 0 no-repeat;
+      background-size: 19px;
+    }
+  }//_passage
+}

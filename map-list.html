@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <title>Оформление заказа</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+  <link rel="shortcut icon" href="favicon.png">
+  <!--[if lt IE 10]><script src="js/IE9.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+
+  <!-- Подключаем API  карт 2.x  -->
+  <!--<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>-->
+  <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+</head>
+
+<body>
+
+<!-- START header -->
+<div class="header">
+  <div class="header-top">
+    <div class="l-layout">
+      <div class="l-header">
+        <a href="#menu" class="menu-link active">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="header-top_logo"><img src="img/logo.png" alt=""></div>
+        <div class="header-top_phoneNumber">+7 (495) 723-33-63</div>
+        <div class="header-top_user">
+          <a href="#" class="header-top_userAccount"></a>
+
+          <!--START entry -->
+          <div class="popap popap-entry">
+            <div class="popap_top">
+              <a href="#" class="popap_link popap_login">Вход</a>
+              <a href="#" class="popap_link popap_link--active popap_reg">Регистрация</a>
+              <a href="#" class="popap_user popap_user--entry"></a>
+            </div>
+            <div class="popap-entry_body">
+              <form action="#">
+                <input class="popap_input" type="text" />
+                <input class="popap_input" type="text" />
+                <div class="l-popap_body">
+                  <div class="popap_body-left">
+                    <input class="popap-check" type="checkbox" id="remember-me">
+                    <label for="remember-me"></label>
+                  </div>
+                  <div class="popap_body-right">
+                    <button class="popap_button">Войти</button>
+                    <a href="#" class="popap-entry_recovery">Восстановить пароль</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <a href="#" class="popap_close">
+              <i class="popap_close-icon"></i>
+            </a>
+          </div>
+          <!--END entry -->
+
+
+          <!--START popap-registration  -->
+          <div class="popap popap-registration">
+            <div class="popap_top">
+              <a href="#" class="popap_link popap_reg">Регистрация</a>
+              <a href="#" class="popap_user"></a>
+              <a href="#" class="popap_link popap_link--active popap_login">Вход</a>
+            </div>
+            <div class="l-popap_body">
+              <div class="popap_body-left">
+                <input class="popap_input" type="text" name="name" placeholder="ФИО"/>
+                <input class="popap_input" type="text" name="e-mail" placeholder="e-mail"/>
+                <input class="popap_input" type="text" name="phone-number" placeholder="+7(___)___-__-__"/>
+                <input class="popap_input" type="text" name="city" placeholder="Ваш город"/>
+                <input class="popap_input" type="text" name="pass" placeholder="Пароль"/>
+                <input class="popap_input" type="text" name="repaet-pass" placeholder="Повторить пароль"/>
+                <div class="l-grid">
+                  <div class="l-grid_item"><p class="popap_input-text">введите код</p></div>
+                  <div class="l-grid_item"><div class="popap_input-captcha"><img src="img/capcha.png" alt=""></div></div>
+                  <div class="l-grid_item"><input class="captcha-input" type="text" /></div>
+                </div>
+                <div class="l-popap_button">
+                  <button class="popap_button">Войти</button>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="popap_body-right">
+              <div class="popap-video">
+                <iframe width="462" height="260" src="https://www.youtube.com/embed/Eeue7FWnNJs" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="popap-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+            </div>
+            <!--popap_body-right-->
+            <a href="#" class="popap_close">
+              <i class="popap_close-icon"></i>
+            </a>
+          </div>
+          <!--END popap-registration -->
+
+
+        </div>
+        <!--header-top_user-->
+
+        <!--header-top_search-->
+        <div class="header-top_search">
+          <form action="">
+            <input type="search">
+            <button type="button" name="button"></button>
+          </form>
+        </div>
+        <!--header-top_search-->
+
+        <!--header-top_basket-->
+        <div class="header-top_basket">
+          <a href="#">
+            <span class="header-top_basket-quantity">3</span>
+            <span class="header-top_basket-sum">20076<span>руб.</span></span>
+          </a>
+        </div>
+        <!--header-top_basket-->
+
+      </div>
+      <div class="header-mobile-logo"><img src="img/logo.png" alt=""></div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <div class="l-layout">
+      <!-- <a href="#menu" class="menu-link active">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a> -->
+      <div id="menu" class="menu">
+        <ul class="header-nav-list level-1" >
+          <li class="header-nav_item"><a class="header-nav_item-link has-subnav" href="">Каталог</a>
+            <ul class="wide level-2">
+
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-1.jpg" alt=""></div>
+                <div class="wide-item_title">Браслеты</div>
+                <a class="" href="#">Камень</a>
+                <a class="" href="#">Шамбала</a>
+                <a class="" href="#">Майорка</a>
+              </div>
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-2.jpg" alt=""></div>
+                <div class="wide-item_title">Броши</div>
+                <a class="" href="#">Бижутерия</a>
+                <a class="" href="#">Камни</a>
+              </div>
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-3.jpg" alt=""></div>
+                <div class="wide-item_title">Бусы</div>
+                <a class="" href="#">Цирконы</a>
+                <a class="" href="#">Камень</a>
+                <a class="" href="#">Майорка</a>
+              </div>
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-4.jpg" alt=""></div>
+                <div class="wide-item_title">Жемчуг</div>
+                <a class="" href="#">Браслеты</a>
+                <a class="" href="#">Бусы</a>
+                <a class="" href="#">Броши</a>
+                <a class="" href="#">Серьги</a>
+              </div>
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-5.jpg" alt=""></div>
+                <div class="wide-item_title">Кольца</div>
+                <a class="" href="#">Камни</a>
+                <a class="" href="#">Родий</a>
+              </div>
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-6.jpg" alt=""></div>
+                <div class="wide-item_title">Бижутерия</div>
+                <a class="" href="#">Браслеты</a>
+                <a class="" href="#">Колье</a>
+                <a class="" href="#">Кольца</a>
+                <a class="" href="#">Посеребрение</a>
+                <a class="" href="#">Кулоны</a>
+                <a class="" href="#">Серьги</a>
+              </div>
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-7.jpg" alt=""></div>
+                <div class="wide-item_title">Кулоны</div>
+                <!-- <div class="wide-item_"></div> -->
+                <a class="" href="#">Камень</a>
+                <a class="" href="#">Муранское стекло</a>
+              </div>
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-8.jpg" alt=""></div>
+                <div class="wide-item_title">Серьги</div>
+                <!-- <div class="wide-item_"></div> -->
+                <a class="" href="#">Камни</a>
+                <a class="" href="#">Родий</a>
+                <a class="" href="#">Пуссеты</a>
+              </div>
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-9.jpg" alt=""></div>
+                <div class="wide-item_title">Сувениры</div>
+                <!-- <div class="wide-item_"></div> -->
+                <a class="" href="#">Камни</a>
+                <a class="" href="#">Фигурки</a>
+              </div>
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-10.jpg" alt=""></div>
+                <div class="wide-item_title">Авторские</div>
+                <!-- <div class="wide-item_"></div> -->
+                <a class="" href="#">Браслеты</a>
+                <a class="" href="#">Бусы</a>
+                <a class="" href="#">Колье</a>
+                <a class="" href="#">Кольца</a>
+                <a class="" href="#">Серьги</a>
+              </div>
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-11.jpg" alt=""></div>
+                <div class="wide-item_title">Элит</div>
+                <a class="" href="#">Браслеты</a>
+                <a class="" href="#">Колье</a>
+                <a class="" href="#">Золото</a>
+                <a class="" href="#">Комплекты</a>
+                <a class="" href="#">Родий</a>
+                <a class="" href="#">Кулоны</a>
+              </div>
+              <div class="wide-item">
+                <div class="wide-item_img"><img src="img/subnav-12.jpg" alt=""></div>
+                <div class="wide-item_title">Фурнитура</div>
+                <a class="" href="#">Бусины</a>
+                <a class="" href="#">Упаковка</a>
+                <a class="" href="#">Вставка</a>
+                <a class="" href="#">Замочки</a>
+                <a class="" href="#">Цепочки и шнурки</a>
+                <a class="" href="#">Швенцы</a>
+              </div>
+            </ul>
+          </li>
+          <li class="header-nav_item"><a class="header-nav_item-link has-subnav" href="">Подбор по зодиаку</a><!--<span>&#x25BC;</span>-->
+            <ul class="level-2">
+              <li class="submenu"><a href="">Пункт меню 1</a></li>
+              <li><a href="">Пункт меню 2</a></li>
+              <li><a href="">Пункт меню 3</a></li>
+            </ul></li>
+          </li>
+          <li class="header-nav_item"><a class="header-nav_item-link has-subnav" href="">Доставка</a></li>
+          <li class="header-nav_item"><a class="header-nav_item-link has-subnav" href="">Оплата</a></li>
+          <li class="header-nav_item"><a class="header-nav_item-link has-subnav" href="">Новинки</a></li>
+          <li class="header-nav_item"><a class="header-nav_item-link has-subnav" href="">Акции</a></li>
+          <li class="header-nav_item"><a class="header-nav_item-link has-subnav" href="">Распродажа</a></li>
+          <li class="header-nav_item"><a class="header-nav_item-link has-subnav" href="">Оптовикам</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- END header-nav -->
+</div>
+<!-- END header -->
+
+
+<!-- START main -->
+<div class="main">
+  <div class="l-map">
+    <div class="samotsvet-subtitle map-title">
+      <div class="l-layout">
+        <h3>Адреса пунктов самовывоза</h3>
+        <a href="#" class="map-title_partners">
+          <a href="#" class="map-title_partners-hover">Наши партнеры</a>
+
+        </a>
+      </div>
+    </div>
+    <div class="l-layout">
+      <div class="l-map_button">
+        <div class="l-map-left"></div>
+        <div class="l-map-right">
+          <div class="map-button"><a class="map-list" href="#">К списку</a></div>
+          <div class="map-button"><a class="map-all" href="#">К общей карте</a></div>
+        </div>
+      </div>
+      <div class="map-content">
+        <div id="sidebar">
+          <div id="nav-anchor"></div>
+          <nav>
+            <ul>
+              <li><a href="#1">a</a></li>
+              <li><a href="#2">б</a></li>
+              <li><a href="#3">в</a></li>
+              <li><a href="#4">г</a></li>
+              <li><a href="#6">е</a></li>
+              <li><a href="#10">и</a></li>
+              <li><a href="#11">й</a></li>
+              <li><a href="#12">к</a></li>
+              <li><a href="#13">л</a></li>
+              <li><a href="#14">м</a></li>
+              <li><a href="#15">н</a></li>
+              <li><a href="#16">о</a></li>
+              <li><a href="#17">п</a></li>
+              <li><a href="#18">р</a></li>
+              <li><a href="#19">с</a></li>
+              <li><a href="#20">т</a></li>
+              <li><a href="#21">у</a></li>
+              <li><a href="#23">х</a></li>
+              <li><a href="#25">ч</a></li>
+              <li><a href="#33">я</a></li>
+            </ul>
+          </nav>
+        </div><!-- /sidebar -->
+
+        <div id="content">
+          <section id="1">
+            <div class="section-name"><span>А</span></div>
+            <!-- START city-card -->
+              <div class="city-card">
+                <h3 class="city-card_title">САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»</h3>
+                <div class="city-card_item city-card_adress">г. Архангельск, Ломоносова пр-кт, д. 144</div>
+                <div class="city-card_item city-card_phone-number">8-900-222-76-67</div>
+                <div class="city-card_item city-card_time-work">пн-пт с 9.00 до 19.00, сб-вск с 10.00 до 20.00</div>
+                <div class="city-card_item city-card_pay">наличные, карта</div>
+                <div class="city-card_item city-card_passage">Пункт выдачи заказов находится в помещении ЦПО. Транспортом: со стороны центра: автобус № 12, 54, 62, 104, 134; со стороны Соломбалы автобус № 6, 22; со стороны Вокзала автобус № 4, 6, 11, 54, 104 до ост. Орбита; автобус №1, 1у, 7, 22, 42, 60, 61, 73, 76 до ост. Петровский парк Расположение:Войти в здание с вывеской Ростелеком через центральный вход. Пункт выдачи заказов расположен в помещении ЦПО на первом этаже</div>
+              </div>
+            <!-- END city-card -->
+            <!-- START city-card -->
+              <div class="city-card">
+                <h3 class="city-card_title">САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»</h3>
+                <div class="city-card_item city-card_adress">г. Архангельск, Ломоносова пр-кт, д. 144</div>
+                <div class="city-card_item city-card_phone-number">8-900-222-76-67</div>
+                <div class="city-card_item city-card_time-work">пн-пт с 9.00 до 19.00, сб-вск с 10.00 до 20.00</div>
+                <div class="city-card_item city-card_pay">наличные, карта</div>
+                <div class="city-card_item city-card_passage">Пункт выдачи заказов находится в помещении ЦПО. Транспортом: со стороны центра: автобус № 12, 54, 62, 104, 134; со стороны Соломбалы автобус № 6, 22; со стороны Вокзала автобус № 4, 6, 11, 54, 104 до ост. Орбита; автобус №1, 1у, 7, 22, 42, 60, 61, 73, 76 до ост. Петровский парк Расположение:Войти в здание с вывеской Ростелеком через центральный вход. Пункт выдачи заказов расположен в помещении ЦПО на первом этаже</div>
+              </div>
+            <!-- END city-card -->
+          </section>
+
+          <section id="2">
+            <div class="section-name"><span>Б</span></div>
+            <!-- START city-card -->
+            <div class="city-card">
+              <h3 class="city-card_title">САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»</h3>
+              <div class="city-card_item city-card_adress">г. Белгород, Ломоносова пр-кт, д. 144</div>
+              <div class="city-card_item city-card_phone-number">8-900-222-76-67</div>
+              <div class="city-card_item city-card_time-work">пн-пт с 9.00 до 19.00, сб-вск с 10.00 до 20.00</div>
+              <div class="city-card_item city-card_pay">наличные, карта</div>
+              <div class="city-card_item city-card_passage">Пункт выдачи заказов находится в помещении ЦПО. Транспортом: со стороны центра: автобус № 12, 54, 62, 104, 134; со стороны Соломбалы автобус № 6, 22; со стороны Вокзала автобус № 4, 6, 11, 54, 104 до ост. Орбита; автобус №1, 1у, 7, 22, 42, 60, 61, 73, 76 до ост. Петровский парк Расположение:Войти в здание с вывеской Ростелеком через центральный вход. Пункт выдачи заказов расположен в помещении ЦПО на первом этаже</div>
+            </div>
+            <!-- END city-card -->
+            <!-- START city-card -->
+            <div class="city-card">
+              <h3 class="city-card_title">САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»</h3>
+              <div class="city-card_item city-card_adress">г. Барнаул, Ломоносова пр-кт, д. 144</div>
+              <div class="city-card_item city-card_phone-number">8-900-222-76-67</div>
+              <div class="city-card_item city-card_time-work">пн-пт с 9.00 до 19.00, сб-вск с 10.00 до 20.00</div>
+              <div class="city-card_item city-card_pay">наличные, карта</div>
+              <div class="city-card_item city-card_passage">Пункт выдачи заказов находится в помещении ЦПО. Транспортом: со стороны центра: автобус № 12, 54, 62, 104, 134; со стороны Соломбалы автобус № 6, 22; со стороны Вокзала автобус № 4, 6, 11, 54, 104 до ост. Орбита; автобус №1, 1у, 7, 22, 42, 60, 61, 73, 76 до ост. Петровский парк Расположение:Войти в здание с вывеской Ростелеком через центральный вход. Пункт выдачи заказов расположен в помещении ЦПО на первом этаже</div>
+            </div>
+            <!-- END city-card -->
+          </section>
+
+          <section id="3">
+            <div class="section-name"><span>В</span></div>
+            <!-- START city-card -->
+            <div class="city-card">
+              <h3 class="city-card_title">САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»</h3>
+              <div class="city-card_item city-card_adress">г. Владивосток, Ломоносова пр-кт, д. 144</div>
+              <div class="city-card_item city-card_phone-number">8-900-222-76-67</div>
+              <div class="city-card_item city-card_time-work">пн-пт с 9.00 до 19.00, сб-вск с 10.00 до 20.00</div>
+              <div class="city-card_item city-card_pay">наличные, карта</div>
+              <div class="city-card_item city-card_passage">Пункт выдачи заказов находится в помещении ЦПО. Транспортом: со стороны центра: автобус № 12, 54, 62, 104, 134; со стороны Соломбалы автобус № 6, 22; со стороны Вокзала автобус № 4, 6, 11, 54, 104 до ост. Орбита; автобус №1, 1у, 7, 22, 42, 60, 61, 73, 76 до ост. Петровский парк Расположение:Войти в здание с вывеской Ростелеком через центральный вход. Пункт выдачи заказов расположен в помещении ЦПО на первом этаже</div>
+            </div>
+            <!-- END city-card -->
+            <!-- START city-card -->
+            <div class="city-card">
+              <h3 class="city-card_title">САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»</h3>
+              <div class="city-card_item city-card_adress">г. Владикавказ, Ломоносова пр-кт, д. 144</div>
+              <div class="city-card_item city-card_phone-number">8-900-222-76-67</div>
+              <div class="city-card_item city-card_time-work">пн-пт с 9.00 до 19.00, сб-вск с 10.00 до 20.00</div>
+              <div class="city-card_item city-card_pay">наличные, карта</div>
+              <div class="city-card_item city-card_passage">Пункт выдачи заказов находится в помещении ЦПО. Транспортом: со стороны центра: автобус № 12, 54, 62, 104, 134; со стороны Соломбалы автобус № 6, 22; со стороны Вокзала автобус № 4, 6, 11, 54, 104 до ост. Орбита; автобус №1, 1у, 7, 22, 42, 60, 61, 73, 76 до ост. Петровский парк Расположение:Войти в здание с вывеской Ростелеком через центральный вход. Пункт выдачи заказов расположен в помещении ЦПО на первом этаже</div>
+            </div>
+            <!-- END city-card -->
+            <!-- START city-card -->
+            <div class="city-card">
+              <h3 class="city-card_title">САЛОН «САМОЦВЕТЫ»</h3>
+              <div class="city-card_item city-card_adress">г. Владимир, Ломоносова пр-кт, д. 144</div>
+              <div class="city-card_item city-card_phone-number">8-900-222-76-67</div>
+              <div class="city-card_item city-card_time-work">пн-пт с 9.00 до 19.00, сб-вск с 10.00 до 20.00</div>
+              <div class="city-card_item city-card_pay">наличные, карта</div>
+              <div class="city-card_item city-card_passage">Пункт выдачи заказов находится в помещении ЦПО. Транспортом: со стороны центра: автобус № 12, 54, 62, 104, 134; со стороны Соломбалы автобус № 6, 22; со стороны Вокзала автобус № 4, 6, 11, 54, 104 до ост. Орбита; автобус №1, 1у, 7, 22, 42, 60, 61, 73, 76 до ост. Петровский парк Расположение:Войти в здание с вывеской Ростелеком через центральный вход. Пункт выдачи заказов расположен в помещении ЦПО на первом этаже</div>
+            </div>
+            <!-- END city-card -->
+            <!-- START city-card -->
+            <div class="city-card">
+              <h3 class="city-card_title">САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»</h3>
+              <div class="city-card_item city-card_adress">г. Волгоград, Ломоносова пр-кт, д. 144</div>
+              <div class="city-card_item city-card_phone-number">8-900-222-76-67</div>
+              <div class="city-card_item city-card_time-work">пн-пт с 9.00 до 19.00, сб-вск с 10.00 до 20.00</div>
+              <div class="city-card_item city-card_pay">наличные, карта</div>
+              <div class="city-card_item city-card_passage">Пункт выдачи заказов находится в помещении ЦПО. Транспортом: со стороны центра: автобус № 12, 54, 62, 104, 134; со стороны Соломбалы автобус № 6, 22; со стороны Вокзала автобус № 4, 6, 11, 54, 104 до ост. Орбита; автобус №1, 1у, 7, 22, 42, 60, 61, 73, 76 до ост. Петровский парк Расположение:Войти в здание с вывеской Ростелеком через центральный вход. Пункт выдачи заказов расположен в помещении ЦПО на первом этаже</div>
+            </div>
+            <!-- END city-card -->
+            <!-- START city-card -->
+            <div class="city-card">
+              <h3 class="city-card_title">САЛОН «САМОЦВЕТЫ»</h3>
+              <div class="city-card_item city-card_adress">г. Великий Новгород, Ломоносова пр-кт, д. 144</div>
+              <div class="city-card_item city-card_phone-number">8-900-222-76-67</div>
+              <div class="city-card_item city-card_time-work">пн-пт с 9.00 до 19.00, сб-вск с 10.00 до 20.00</div>
+              <div class="city-card_item city-card_pay">наличные, карта</div>
+              <div class="city-card_item city-card_passage">Пункт выдачи заказов находится в помещении ЦПО. Транспортом: со стороны центра: автобус № 12, 54, 62, 104, 134; со стороны Соломбалы автобус № 6, 22; со стороны Вокзала автобус № 4, 6, 11, 54, 104 до ост. Орбита; автобус №1, 1у, 7, 22, 42, 60, 61, 73, 76 до ост. Петровский парк Расположение:Войти в здание с вывеской Ростелеком через центральный вход. Пункт выдачи заказов расположен в помещении ЦПО на первом этаже</div>
+            </div>
+            <!-- END city-card -->
+          </section>
+          </section>
+
+          <section id="4">
+            <div class="section-name"><span>Г</span></div>
+            <!-- START city-card -->
+            <div class="city-card">
+              <h3 class="city-card_title">САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»</h3>
+              <div class="city-card_item city-card_adress">г. Грозный, Ломоносова пр-кт, д. 144</div>
+              <div class="city-card_item city-card_phone-number">8-900-222-76-67</div>
+              <div class="city-card_item city-card_time-work">пн-пт с 9.00 до 19.00, сб-вск с 10.00 до 20.00</div>
+              <div class="city-card_item city-card_pay">наличные, карта</div>
+              <div class="city-card_item city-card_passage">Пункт выдачи заказов находится в помещении ЦПО. Транспортом: со стороны центра: автобус № 12, 54, 62, 104, 134; со стороны Соломбалы автобус № 6, 22; со стороны Вокзала автобус № 4, 6, 11, 54, 104 до ост. Орбита; автобус №1, 1у, 7, 22, 42, 60, 61, 73, 76 до ост. Петровский парк Расположение:Войти в здание с вывеской Ростелеком через центральный вход. Пункт выдачи заказов расположен в помещении ЦПО на первом этаже</div>
+            </div>
+            <!-- END city-card -->
+            <!-- START city-card -->
+            <div class="city-card">
+              <h3 class="city-card_title">САЛОН «ЧАРУЮЩИЕ САМОЦВЕТЫ»</h3>
+              <div class="city-card_item city-card_adress">г. Грозный, Ломоносова пр-кт, д. 144</div>
+              <div class="city-card_item city-card_phone-number">8-900-222-76-67</div>
+              <div class="city-card_item city-card_time-work">пн-пт с 9.00 до 19.00, сб-вск с 10.00 до 20.00</div>
+              <div class="city-card_item city-card_pay">наличные, карта</div>
+              <div class="city-card_item city-card_passage">Пункт выдачи заказов находится в помещении ЦПО. Транспортом: со стороны центра: автобус № 12, 54, 62, 104, 134; со стороны Соломбалы автобус № 6, 22; со стороны Вокзала автобус № 4, 6, 11, 54, 104 до ост. Орбита; автобус №1, 1у, 7, 22, 42, 60, 61, 73, 76 до ост. Петровский парк Расположение:Войти в здание с вывеской Ростелеком через центральный вход. Пункт выдачи заказов расположен в помещении ЦПО на первом этаже</div>
+            </div>
+            <!-- END city-card -->
+          </section>
+          </section>
+
+          <section id="5">
+            <div class="section-name"><span>Д</span></div>
+
+          </section>
+        </div><!-- /#content -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END main -->
+
+<!-- START footer -->
+<div class="footer">
+  <a href="#" class="footer-partners">Наши партнеры</a>
+  <div class="l-layout">
+    <!-- START l-footer -->
+    <div class="l-footer">
+      <div class="footer-contact">
+        <div class="footer-contact_logo"><img src="img/logo.png" alt=""></div>
+        <div class="footer-social-mobile">
+          <div class="social_btn"><a href="#" class="tw"></a></div>
+          <div class="social_btn"><a href="#" class="fb"></a></div>
+          <div class="social_btn"><a href="#" class="vk"></a></div>
+          <div class="social_btn"><a href="#" class="inst"></a></div>
+        </div>
+        <div class="footer-contact_foneNumber">
+          <p><span>+7 (495)</span>723-33-63</p>
+          <p><span>+7 (495)</span>723-33-63</p>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <ul class="footer-menu-list">
+          <li class="footer-menu_item"><a href="#">Каталог</a></li>
+          <li class="footer-menu_item"><a href="#">Подбор по зодиаку</a></li>
+          <li class="footer-menu_item"><a href="#">Доставка</a></li>
+          <li class="footer-menu_item"><a href="#">Оплата</a></li>
+          <li class="footer-menu_item"><a href="#">Новинки Акции</a></li>
+          <li class="footer-menu_item"><a href="#">Распродажа</a></li>
+          <li class="footer-menu_item"><a href="#">Оптовикам</a></li>
+          <li class="footer-menu_item"><a href="#"></a></li>
+        </ul>
+
+        <ul class="footer-menu-list">
+          <li class="footer-menu_item"><a href="#">БРАСЛЕТЫ</a></li>
+          <li class="footer-menu_item"><a href="#">БРОШИ</a></li>
+          <li class="footer-menu_item"><a href="#">БУСЫ </a></li>
+          <li class="footer-menu_item"><a href="#">Жемчуг</a></li>
+          <li class="footer-menu_item"><a href="#">КОЛЬЦА</a></li>
+          <li class="footer-menu_item"><a href="#">КОМПЛЕКТЫ </a></li>
+          <li class="footer-menu_item"><a href="#">КУЛОНЫ</a></li>
+          <li class="footer-menu_item"><a href="#">СЕРЬГИ</a></li>
+          <li class="footer-menu_item"><a href="#">СУВЕНИРЫ</a></li>
+        </ul>
+
+        <ul class="footer-menu-list">
+          <li class="footer-menu_item"><a href="#">БРАСЛЕТЫ</a></li>
+          <li class="footer-menu_item"><a href="#">БРОШИ</a></li>
+          <li class="footer-menu_item"><a href="#">БУСЫ </a></li>
+          <li class="footer-menu_item"><a href="#">Жемчуг</a></li>
+          <li class="footer-menu_item"><a href="#">Кольца</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <div class="social_btn"><a href="#" class="tw"></a></div>
+        <div class="social_btn"><a href="#" class="fb"></a></div>
+        <div class="social_btn"><a href="#" class="vk"></a></div>
+        <div class="social_btn"><a href="#" class="ok"></a></div>
+        <div class="social_btn"><a href="#" class="inst"></a></div>
+        <div class="social_btn"><a href="#" class="youtube"></a></div>
+        <p class="footer-social_copyright">2008-2014 © Samotsvet.ru - интернет-магазин украшений из натуральных камнейи элитной бижутерии. Все права защищены. Бесплатная доставка по России*.</p>
+      </div>
+    </div>
+    <!-- END l-footer -->
+
+  </div>
+  </div>
+  <!-- END footer -->
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.umd.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+
+<script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+<script src="js/classie.js"></script>
+<script src='js/jquery.scrollto.js'></script>
+<script src='js/jquery.sticky-kit.js'></script>
+<script src="js/main.js"></script>
+</body>
+</html>
