@@ -237,13 +237,13 @@ span.has-subnav {
   }
 
   &_title {
-    color: #FFF;
     font-family: "Tahoma";
-    font-size: 11px;
     font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 20px;
     text-align: center;
+    color: #FFF;
+    font-size: 11px;
+    text-transform: uppercase;
   }
 
   a {
@@ -336,6 +336,14 @@ span.has-subnav {
   }
 }
 
-@media all and (max-width: 710px) {
+.wide-item_title a {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 0;
+}
 
+.wide-item_img a:hover::after,
+.wide-item_title a:hover::after {
+  border: none;
 }

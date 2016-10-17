@@ -771,13 +771,13 @@ span.has-subnav {
       margin-bottom: 5px;
       text-align: center; }
     .wide-item_title {
-      color: #FFF;
       font-family: "Tahoma";
-      font-size: 11px;
       font-weight: 700;
-      text-transform: uppercase;
       margin-bottom: 20px;
-      text-align: center; }
+      text-align: center;
+      color: #FFF;
+      font-size: 11px;
+      text-transform: uppercase; }
     .wide-item a {
       position: relative;
       display: block;
@@ -838,6 +838,16 @@ span.has-subnav {
   .menu-link {
     vertical-align: top;
     margin-top: 23px; } }
+
+.wide-item_title a {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 0; }
+
+.wide-item_img a:hover::after,
+.wide-item_title a:hover::after {
+  border: none; }
 
 .footer {
   background: #44A397 url("../img/footer-bg.jpg") 0 0 no-repeat;
@@ -1999,7 +2009,7 @@ hr {
       margin-right: 1px; }
   .popap .captcha-input {
     vertical-align: top;
-    width: 162px;
+    width: 163px;
     height: 43px;
     padding: 15px 20px;
     color: #000;
