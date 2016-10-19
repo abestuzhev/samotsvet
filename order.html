@@ -504,10 +504,10 @@
             <a class="productCard-title" href="">КОМПЛЕКТ: PL-7003 Lorem ipsum dolor</a>
             <div class="productCard-quantity">
               <div class="productCard-quantity_title">количество</div>
-              <div class="productCard-quantity_number">
-                <span class="minus"></span>
-                <input class="number" type="text" value="1">
-                <span class="plus"></span>
+              <div class="productCard-quantity_number spinner" data-trigger="spinner" id="spinner">
+                <a href="javascript:;" class="minus" data-spin="down"></a>
+                <input class="number" type="text" value="1" data-rule="quantity"  >
+                <a href="javascript:;" class="plus" data-spin="up"></a>
               </div>
             </div>
 
@@ -661,6 +661,7 @@
   <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 
   <script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+  <script src="js/jquery.spinner.min.js"></script>
   <script src="js/classie.js"></script>
   <script src="js/main.js"></script>
 </body>

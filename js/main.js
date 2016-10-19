@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $(".spinner").spinner();
+
   $('#js-register-form').validate({
     rules: {
       form_name: {
