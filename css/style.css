@@ -539,6 +539,7 @@ a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-p
     margin-top: 16px; }
   .header-top_phoneNumber {
     display: block;
+    color: #FFF;
     margin-bottom: 2px; }
   .header-top_email {
     display: block;
