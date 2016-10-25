@@ -6,6 +6,7 @@
 }
 
     .header {
+      padding-top: 64px;
 
       &-mobile-logo {
         display: none;
@@ -20,6 +21,11 @@
       &-top {
         background-color: $dark-color;
         width: 100%;
+        z-index: 999999999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: .5;
 
         &_logo {
           display: inline-block;

@@ -516,93 +516,99 @@ a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-p
     display: inline-block;
     width: 100%; }
 
-.header-mobile-logo {
-  display: none; }
-  @media all and (max-width: 800px) {
-    .header-mobile-logo {
-      display: block;
-      text-align: center; } }
-
-.header-top {
-  background-color: #2a2531;
-  width: 100%; }
-  .header-top_logo {
-    display: inline-block; }
-  .header-top_phoneNumber {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 64px;
-    color: #FFF;
-    font-family: "Noto Sans";
-    font-size: 14px;
-    font-weight: 700; }
-  .header-top_user {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    margin-top: 15px; }
-  .header-top_userAccount {
-    display: block;
-    background: url("../img/user-icon.png") 0 0 no-repeat;
-    width: 17px;
-    height: 23px; }
-  .header-top_search {
-    display: inline-block;
-    width: 220px;
-    vertical-align: top; }
-    .header-top_search form {
-      margin-top: 17px;
-      position: relative; }
-      .header-top_search form input {
-        border: 1px solid #44A397;
-        padding-right: 35px;
-        width: 100%; }
-      .header-top_search form button {
-        cursor: pointer;
-        position: absolute;
-        top: 7px;
-        right: 6px;
-        width: 18px;
-        height: 18px;
-        outline: none;
-        border: none;
-        background: url("../img/search-icon.png") 0 0 no-repeat; }
-        .header-top_search form button::before {
-          content: '';
-          position: absolute;
-          width: 1px;
-          height: 100%;
-          top: -1px;
-          left: -6px;
-          background-color: #44A397; }
-  .header-top_basket {
-    display: inline-block;
-    position: relative;
-    width: 70px;
-    height: 100%;
-    vertical-align: top;
-    background: url("../img/basket-icon.png") 50% 50% no-repeat;
-    text-align: center; }
-    .header-top_basket a {
-      display: block; }
-    .header-top_basket-quantity {
-      color: #50A89D;
+.header {
+  padding-top: 64px; }
+  .header-mobile-logo {
+    display: none; }
+    @media all and (max-width: 800px) {
+      .header-mobile-logo {
+        display: block;
+        text-align: center; } }
+  .header-top {
+    background-color: #2a2531;
+    width: 100%;
+    z-index: 999999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .5; }
+    .header-top_logo {
+      display: inline-block; }
+    .header-top_phoneNumber {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 64px;
+      color: #FFF;
       font-family: "Noto Sans";
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 72px;
-      text-transform: uppercase; }
-    .header-top_basket-sum {
-      color: #50A89D;
-      font-weight: 400;
       font-size: 14px;
-      line-height: 14px;
-      position: absolute;
-      bottom: 3px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%); }
+      font-weight: 700; }
+    .header-top_user {
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      margin-top: 15px; }
+    .header-top_userAccount {
+      display: block;
+      background: url("../img/user-icon.png") 0 0 no-repeat;
+      width: 17px;
+      height: 23px; }
+    .header-top_search {
+      display: inline-block;
+      width: 220px;
+      vertical-align: top; }
+      .header-top_search form {
+        margin-top: 17px;
+        position: relative; }
+        .header-top_search form input {
+          border: 1px solid #44A397;
+          padding-right: 35px;
+          width: 100%; }
+        .header-top_search form button {
+          cursor: pointer;
+          position: absolute;
+          top: 7px;
+          right: 6px;
+          width: 18px;
+          height: 18px;
+          outline: none;
+          border: none;
+          background: url("../img/search-icon.png") 0 0 no-repeat; }
+          .header-top_search form button::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: -1px;
+            left: -6px;
+            background-color: #44A397; }
+    .header-top_basket {
+      display: inline-block;
+      position: relative;
+      width: 70px;
+      height: 100%;
+      vertical-align: top;
+      background: url("../img/basket-icon.png") 50% 50% no-repeat;
+      text-align: center; }
+      .header-top_basket a {
+        display: block; }
+      .header-top_basket-quantity {
+        color: #50A89D;
+        font-family: "Noto Sans";
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 72px;
+        text-transform: uppercase; }
+      .header-top_basket-sum {
+        color: #50A89D;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        position: absolute;
+        bottom: 3px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
 
 .menu-link {
   color: #000;
@@ -1518,7 +1524,7 @@ nav.stick {
   position: fixed;
   top: 0;
   z-index: 10000;
-  margin-top: 12px; }
+  margin-top: 64px; }
 
 nav ul {
   list-style-type: none;
@@ -1604,11 +1610,16 @@ hr {
     margin-bottom: 15px; }
   .stone-card_img {
     width: 84px;
+    height: 73px;
+    overflow: hidden;
     float: left;
-    margin-right: 20px; }
+    margin-right: 20px;
+    background: url("../img/stone-mask.png") 0 0 no-repeat; }
     .stone-card_img img {
       max-width: 100%;
-      height: auto; }
+      height: auto;
+      position: relative;
+      z-index: -1; }
   .stone-card_text {
     color: #555;
     font-family: "Tahoma";

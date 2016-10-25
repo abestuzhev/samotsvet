@@ -210,7 +210,7 @@ $(window).resize(function() {
 
 $(document).ready(function(){
 
-        $("#sidebar").stick_in_parent();
+        $("#sidebar").stick_in_parent({offset_top: 64});
 
         /**
          * This part does the "fixed navigation after scroll" functionality
@@ -218,7 +218,7 @@ $(document).ready(function(){
          * page is scrolled/
          */
         // $(window).scroll(function(){
-        //     var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
+        //     var window_top = $(window).scrollTop() + 64; // the "64" should equal the margin-top value for nav.stick
         //     var div_top = $('#nav-anchor').offset().top;
         //         if (window_top > div_top) {
         //             $('nav').addClass('stick');
