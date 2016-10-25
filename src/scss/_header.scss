@@ -6,7 +6,6 @@
 }
 
     .header {
-      padding-top: 64px;
 
       &-mobile-logo {
         display: none;
@@ -18,34 +17,45 @@
 
       }
 
-      &-top {
-        background-color: $dark-color;
-        width: 100%;
-        z-index: 999999999;
-        position: fixed;
-        top: 0;
-        left: 0;
-        opacity: .5;
+    &-top {
+      background-color: $dark-color;
+      width: 100%;
+      position: static;
 
-        &_logo {
-          display: inline-block;
-        }
+      &_logo {
+        display: inline-block;
+      }
 
-    &_phoneNumber {
+    &_contact {
       display: inline-block;
       vertical-align: top;
-      line-height: 64px;
       color: #FFF;
       font-family: "Noto Sans";
       font-size: 14px;
       font-weight: 700;
+      margin-top: 16px;
     }
+
+      &_phoneNumber {
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      &_email {
+        display: block;
+        color: #FFF;
+      }
 
     &_user {
       display: inline-block;
       position: relative;
       vertical-align: top;
-      margin-top: 15px;
+      margin-top: 18px;
+      @include clear;
+
+      &-wrap {
+        margin-left: 24px;
+      }
 
     }
 
@@ -54,6 +64,22 @@
       background: url($img-dir + 'user-icon.png') 0 0 no-repeat;
       width: 17px;
       height: 23px;
+      float: left;
+    }
+
+    &_userReg,
+    &_userEntrance {
+      display: block;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    &_logined {
+      color: #fff;
+      font-weight: 700;
+      display: block;
+      width: 112px;
     }
 
     &_search {

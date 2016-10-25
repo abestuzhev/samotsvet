@@ -210,7 +210,7 @@ $(window).resize(function() {
 
 $(document).ready(function(){
 
-        $("#sidebar").stick_in_parent({offset_top: 64});
+        $("#sidebar").stick_in_parent();
 
         /**
          * This part does the "fixed navigation after scroll" functionality
