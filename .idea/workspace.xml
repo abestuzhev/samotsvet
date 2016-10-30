@@ -26,13 +26,13 @@
     <favorites_list name="samotsvet" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5226438">
+    <splitter split-orientation="horizontal" split-proportion="0.6599623">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1394">
+                <state relative-caret-position="1804">
                   <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
                   <folding />
                 </state>
@@ -42,7 +42,7 @@
           <file leaf-file-name="order.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/order.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7089">
+                <state relative-caret-position="9174">
                   <caret line="417" column="56" selection-start-line="417" selection-start-column="56" selection-end-line="417" selection-end-column="56" />
                   <folding />
                 </state>
@@ -52,7 +52,7 @@
           <file leaf-file-name="map-list.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/map-list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="6273">
+                <state relative-caret-position="8118">
                   <caret line="369" column="73" selection-start-line="369" selection-start-column="73" selection-end-line="369" selection-end-column="73" />
                   <folding />
                 </state>
@@ -62,8 +62,8 @@
           <file leaf-file-name="search-stones.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/search-stones.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="27" column="84" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
+                <state relative-caret-position="316">
+                  <caret line="41" column="45" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="45" />
                   <folding>
                     <element signature="n#div#0;n#div#1;n#div#1;n#html#0;n#!!top" expanded="false" />
                   </folding>
@@ -78,8 +78,8 @@
           <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/scss/_header.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+                <state relative-caret-position="336">
+                  <caret line="179" column="18" selection-start-line="179" selection-start-column="18" selection-end-line="179" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -88,7 +88,7 @@
           <file leaf-file-name="_main.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/scss/_main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="574">
+                <state relative-caret-position="15444">
                   <caret line="702" column="14" selection-start-line="702" selection-start-column="14" selection-end-line="702" selection-end-column="14" />
                   <folding />
                 </state>
@@ -98,7 +98,7 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="369">
+                <state relative-caret-position="4664">
                   <caret line="212" column="38" selection-start-line="212" selection-start-column="38" selection-end-line="212" selection-end-column="38" />
                   <folding />
                 </state>
@@ -108,8 +108,8 @@
           <file leaf-file-name="_components.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/scss/_components.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="3" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="3" />
+                <state relative-caret-position="308">
+                  <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -137,8 +137,8 @@
         <option value="$PROJECT_DIR$/map-list.html" />
         <option value="$PROJECT_DIR$/src/scss/_main.scss" />
         <option value="$PROJECT_DIR$/src/js/main.js" />
-        <option value="$PROJECT_DIR$/src/scss/_header.scss" />
         <option value="$PROJECT_DIR$/search-stones.html" />
+        <option value="$PROJECT_DIR$/src/scss/_header.scss" />
       </list>
     </option>
   </component>
@@ -193,7 +193,7 @@
     <option name="x" value="55" />
     <option name="y" value="-8" />
     <option name="width" value="1873" />
-    <option name="height" value="1084" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -206,7 +206,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="ColorIdeProjectViewPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -220,28 +220,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samotsvet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samotsvet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samotsvet" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="ColorIdeProjectViewPane">
         <subPane>
           <PATH>
@@ -298,6 +276,28 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samotsvet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samotsvet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samotsvet" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,11 +359,12 @@
       <workItem from="1475667876364" duration="30000" />
       <workItem from="1477362497823" duration="5278000" />
       <workItem from="1477386754097" duration="4571000" />
+      <workItem from="1477840887415" duration="1128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50381000" />
+    <option name="totallyTimeSpent" value="51509000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -375,17 +376,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-8" width="1873" height="1084" extended-state="0" />
+    <frame x="55" y="-8" width="1873" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.123000555" sideWeight="0.5273109" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123000555" sideWeight="0.47268906" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12244898" sideWeight="0.53112036" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12244898" sideWeight="0.46887967" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32676348" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -727,7 +728,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
+        <state relative-caret-position="1804">
           <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
           <folding />
         </state>
@@ -742,7 +743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7089">
+        <state relative-caret-position="9174">
           <caret line="417" column="56" selection-start-line="417" selection-start-column="56" selection-end-line="417" selection-end-column="56" />
           <folding />
         </state>
@@ -750,16 +751,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/map-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6273">
+        <state relative-caret-position="8118">
           <caret line="369" column="73" selection-start-line="369" selection-start-column="73" selection-end-line="369" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/_components.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -775,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,13 +775,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
           <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
+        <state relative-caret-position="4664">
           <caret line="212" column="38" selection-start-line="212" selection-start-column="38" selection-end-line="212" selection-end-column="38" />
           <folding />
         </state>
@@ -797,27 +788,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/_main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
+        <state relative-caret-position="15444">
           <caret line="702" column="14" selection-start-line="702" selection-start-column="14" selection-end-line="702" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search-stones.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="27" column="84" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
+        <state relative-caret-position="316">
+          <caret line="41" column="45" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="45" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#1;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/_components.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="179" column="18" selection-start-line="179" selection-start-column="18" selection-end-line="179" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

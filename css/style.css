@@ -70,7 +70,7 @@ select {
 option {
   background-color: #2a2531; }
 
-a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-partners, .userOrder .form-btn, .stone-card_button::after, .map-title_partners:hover .map-title_partners-hover, .map-title_partners-hover, .popap_link--active:hover, .popap_button, .popap_button:hover, .popap_close:hover, .map-region_point-hover, .map-region_point:hover .map-region_point-hover {
+a, .form-btn, .back-btn, .social_btn, .menu-user-profile_link, .menu-user-profile_link:hover, .header-nav_item a:hover::after, .footer-partners, .userOrder .form-btn, .stone-card_button::after, .map-title_partners:hover .map-title_partners-hover, .map-title_partners-hover, .popap_link--active:hover, .popap_button, .popap_button:hover, .popap_close:hover, .map-region_point-hover, .map-region_point:hover .map-region_point-hover {
   transition: all .2s ease-out; }
 
 .main::after {
@@ -548,11 +548,14 @@ a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-p
     display: inline-block;
     position: relative;
     vertical-align: top;
-    margin-top: 18px; }
+    margin-top: 18px;
+    padding-bottom: 20px; }
     .header-top_user::after {
       content: '';
       display: block;
       clear: both; }
+    .header-top_user:hover .menu-user-profile {
+      display: block; }
     .header-top_user-wrap {
       margin-left: 24px; }
   .header-top_userAccount {
@@ -628,6 +631,33 @@ a, .form-btn, .back-btn, .social_btn, .header-nav_item a:hover::after, .footer-p
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
               transform: translateX(-50%); }
+
+.menu-user-profile {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 32px;
+  left: 0;
+  background-color: #0f5759; }
+  .menu-user-profile_item {
+    border-bottom: 1px solid #fff; }
+    .menu-user-profile_item:last-child {
+      border: none; }
+  .menu-user-profile_link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 13px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0f5759; }
+    .menu-user-profile_link::after {
+      content: ''; }
+    .menu-user-profile_link:hover {
+      background-color: #437c7d;
+      color: #fff; }
 
 .menu-link {
   color: #000;
